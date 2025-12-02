@@ -71,9 +71,25 @@ if (!isAdmin()) {
 
         <div class="toolbar">
             <div class="search-bar">
-                <input type="number" id="buscarId" placeholder="Buscar por ID...">
-                <button class="btn" onclick="buscarUsuarioPorId()"><i class="fas fa-search"></i> Buscar</button>
-                <button class="btn btn-secondary" onclick="cargarUsuarios()"><i class="fas fa-sync"></i> Mostrar Todos</button>
+                <input type="text" id="buscarTexto" placeholder="Buscar por DNI, Nombre, Apellido, Correo o Carrera...">
+                <select id="filtroCarrera" style="max-width: 200px;">
+                    <option value="">Todas las carreras</option>
+                </select>
+                <select id="filtroCiclo" style="max-width: 150px;">
+                    <option value="">Todos los ciclos</option>
+                    <option value="Ciclo 1">Ciclo 1</option>
+                    <option value="Ciclo 2">Ciclo 2</option>
+                    <option value="Ciclo 3">Ciclo 3</option>
+                    <option value="Ciclo 4">Ciclo 4</option>
+                    <option value="Ciclo 5">Ciclo 5</option>
+                    <option value="Ciclo 6">Ciclo 6</option>
+                    <option value="Ciclo 7">Ciclo 7</option>
+                    <option value="Ciclo 8">Ciclo 8</option>
+                    <option value="Ciclo 9">Ciclo 9</option>
+                    <option value="Ciclo 10">Ciclo 10</option>
+                </select>
+                <button class="btn" onclick="buscarUsuarios()"><i class="fas fa-search"></i> Buscar</button>
+                <button class="btn btn-secondary" onclick="limpiarFiltros()"><i class="fas fa-times"></i> Limpiar</button>
             </div>
         </div>
 
@@ -199,6 +215,29 @@ if (!isAdmin()) {
       }
     }
 
+    // Cargar carreras para el filtro y el modal de edición
+    async function cargarCarrerasFiltro() {
+      try {
+        const response = await fetch('get_carreras.php');
+        const data = await response.json();
+        
+        if (data.success && data.carreras) {
+          const selectFiltro = document.getElementById('filtroCarrera');
+          
+          // Agregar carreras únicas al filtro (sin agrupar)
+          const carrerasUnicas = [...new Set(data.carreras.map(c => c.nombre))];
+          carrerasUnicas.sort().forEach(carrera => {
+            const option = document.createElement('option');
+            option.value = carrera;
+            option.textContent = carrera;
+            selectFiltro.appendChild(option);
+          });
+        }
+      } catch (error) {
+        console.error('Error al cargar carreras:', error);
+      }
+    }
+
     // Cargar carreras para el modal de edición
     async function cargarCarrerasEditar() {
       try {
@@ -238,6 +277,89 @@ if (!isAdmin()) {
       } catch (error) {
         console.error('Error al cargar carreras:', error);
       }
+    }
+
+    // Búsqueda inteligente con filtros múltiples
+    async function buscarUsuarios() {
+      const textoBusqueda = document.getElementById('buscarTexto').value.trim().toLowerCase();
+      const carreraFiltro = document.getElementById('filtroCarrera').value;
+      const cicloFiltro = document.getElementById('filtroCiclo').value;
+
+      try {
+        const res = await fetch(API_URL);
+        const usuarios = await res.json();
+
+        // Filtrar usuarios según criterios
+        const usuariosFiltrados = usuarios.filter(user => {
+          // Filtro de texto (busca en múltiples campos)
+          const cumpleTexto = !textoBusqueda || 
+            user.dni.toLowerCase().includes(textoBusqueda) ||
+            user.nombres.toLowerCase().includes(textoBusqueda) ||
+            user.apellidos.toLowerCase().includes(textoBusqueda) ||
+            user.correo.toLowerCase().includes(textoBusqueda) ||
+            (user.carrera && user.carrera.toLowerCase().includes(textoBusqueda));
+
+          // Filtro de carrera
+          const cumpleCarrera = !carreraFiltro || user.carrera === carreraFiltro;
+
+          // Filtro de ciclo
+          const cumpleCiclo = !cicloFiltro || user.ciclo === cicloFiltro;
+
+          return cumpleTexto && cumpleCarrera && cumpleCiclo;
+        });
+
+        // Mostrar resultados
+        if (usuariosFiltrados.length === 0) {
+          tablaBody.innerHTML = "<tr><td colspan='9'>No se encontraron resultados con los filtros aplicados.</td></tr>";
+          return;
+        }
+
+        tablaBody.innerHTML = '';
+        usuariosFiltrados.forEach(user => {
+          tablaBody.innerHTML += `
+            <tr>
+              <td>${user.id}</td>
+              <td>${user.dni}</td>
+              <td>${user.nombres}</td>
+              <td>${user.apellidos}</td>
+              <td>${user.correo}</td>
+              <td>${user.carrera || 'Sin especificar'}</td>
+              <td>${user.ciclo || 'Sin especificar'}</td>
+              <td>${user.comentarios || 'Sin comentarios'}</td>
+              <td>
+                <button onclick="editarUsuario(${user.id})" class="btn-action btn-edit" title="Editar">
+                  <i class="fas fa-edit"></i>
+                </button>
+                <button onclick="eliminarUsuario(${user.id})" class="btn-action btn-delete" title="Eliminar">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </td>
+            </tr>
+          `;
+        });
+
+        // Mostrar mensaje con cantidad de resultados
+        if (textoBusqueda || carreraFiltro || cicloFiltro) {
+          Swal.fire({
+            icon: 'info',
+            title: 'Resultados',
+            text: `Se encontraron ${usuariosFiltrados.length} usuario(s)`,
+            timer: 2000,
+            showConfirmButton: false
+          });
+        }
+      } catch (e) {
+        Swal.fire('Error', 'No se pudo realizar la búsqueda.', 'error');
+        console.error(e);
+      }
+    }
+
+    // Limpiar todos los filtros y mostrar todos los usuarios
+    function limpiarFiltros() {
+      document.getElementById('buscarTexto').value = '';
+      document.getElementById('filtroCarrera').value = '';
+      document.getElementById('filtroCiclo').value = '';
+      cargarUsuarios();
     }
 
     async function buscarUsuarioPorId() {
@@ -412,7 +534,16 @@ if (!isAdmin()) {
       }
     }
 
+    // Inicializar la página
     cargarUsuarios();
+    cargarCarrerasFiltro();
+    
+    // Búsqueda en tiempo real al presionar Enter
+    document.getElementById('buscarTexto').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        buscarUsuarios();
+      }
+    });
   </script>
 
 </body>
