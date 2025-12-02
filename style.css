@@ -1,15 +1,18 @@
 /* --- VARIABLES DE DISEÑO (ESTILO PROFESIONAL) --- */
 :root {
-    --color-primary: #2c3e50; /* Azul Pizarra Oscuro */
-    --color-primary-light: #34495e; /* Versión más clara del primario para hovers */
-    --color-accent: #3498db; /* Un azul más brillante para acentos sutiles */
-    --color-secondary: #95a5a6; /* Gris medio para texto secundario */
-    --color-background: #f4f7f9; /* Fondo general muy claro (casi blanco) */
-    --color-surface: #ffffff; /* Superficies como tablas y modales */
-    --color-text: #34495e; /* Texto principal oscuro y suave */
-    --color-border: #e3e6e8; /* Borde sutil */
-    --shadow: 0 2px 8px rgba(44, 62, 80, 0.1); /* Sombra más suave */
-    --border-radius: 6px; /* Un radio de borde ligeramente más nítido */
+    --color-primary: #667eea;
+    --color-primary-dark: #5568d3;
+    --color-secondary: #764ba2;
+    --color-accent: #3498db;
+    --color-background: #f8f9fa;
+    --color-surface: #ffffff;
+    --color-text: #2c3e50;
+    --color-text-light: #7f8c8d;
+    --color-border: #e3e6e8;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+    --border-radius: 10px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --- ESTILOS GLOBALES --- */
@@ -20,108 +23,156 @@
 }
 
 body {
-    font-family: 'Inter', 'Helvetica Neue', sans-serif; /* Tipografía más neutra y profesional */
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: var(--color-background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
+    line-height: 1.6;
 }
 
 /* --- CONTENEDOR DEL FORMULARIO --- */
 .form-container {
     background: var(--color-surface);
-    padding: 2.5rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
     width: 100%;
-    max-width: 400px; /* Ancho ajustado para un look compacto */
-    border: 1px solid var(--color-border); /* Borde sutil para el contenedor principal */
-    transition: padding 0.3s ease; /* Transición suave para el padding */
+    max-width: 500px;
+    border: 1px solid var(--color-border);
+    transition: var(--transition);
+    margin: 2rem auto;
 }
 
 .form-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.form-header::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    border-radius: 2px;
 }
 
 .form-header h2 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    transition: font-size 0.3s ease; /* Transición suave para el tamaño de fuente */
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    margin-top: 0.8rem;
 }
 
 /* --- GRUPOS DE FORMULARIO --- */
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
 }
 
 .form-group label {
     display: block;
-    font-weight: 500;
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
     color: var(--color-text);
 }
 
 .form-group input {
     width: 100%;
-    padding: 0.75rem 1rem;
-    border: 1px solid var(--color-border);
+    padding: 0.9rem 1.2rem;
+    border: 2px solid var(--color-border);
     border-radius: var(--border-radius);
-    font-size: 0.95rem;
-    font-family: 'Inter', sans-serif;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: var(--transition);
     background-color: var(--color-surface);
 }
 
 .form-group input:focus {
     outline: none;
-    border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    transform: translateY(-1px);
 }
 
-/* --- BOTÓN DE ENVÍO --- */
+.form-group input::placeholder {
+    color: #bdc3c7;
+}
+
+/* --- BOTONES --- */
 button {
     width: 100%;
-    padding: 0.7rem 1.2rem;
-    background: var(--color-primary);
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     border: none;
     color: white;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: background-color 0.2s ease;
-    margin-top: 1rem;
-    text-transform: uppercase; /* Da un toque más formal */
-    letter-spacing: 0.5px;
+    transition: var(--transition);
+    margin-top: 0.5rem;
+    box-shadow: var(--shadow-sm);
+    font-family: inherit;
 }
 
 button:hover {
-    background: var(--color-primary-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button.btn-secondary {
+    background: #95a5a6;
+    margin-top: 1rem;
+}
+
+button.btn-secondary:hover {
+    background: #7f8c8d;
 }
 
 /* --- AJUSTES RESPONSIVOS --- */
+@media (max-width: 768px) {
+    .form-container {
+        margin: 1rem;
+        padding: 2rem;
+    }
+    
+    .form-header h2 {
+        font-size: 1.6rem;
+    }
+}
+
 @media (max-width: 480px) {
     body {
-        /* Permite que el contenedor del formulario use todo el ancho disponible */
-        padding: 0.5rem; 
+        padding: 0.5rem;
     }
 
     .form-container {
-        /* Reduce el espaciado interno en pantallas pequeñas */
-        padding: 1.5rem; 
-        /* Elimina el borde y la sombra para una apariencia más integrada en móviles */
-        border: none;
-        box-shadow: none;
+        padding: 1.5rem;
+        border-radius: 12px;
     }
 
     .form-header h2 {
-        /* Reduce ligeramente el tamaño del título */
         font-size: 1.4rem;
+    }
+    
+    button {
+        padding: 0.9rem 1.2rem;
     }
 }
