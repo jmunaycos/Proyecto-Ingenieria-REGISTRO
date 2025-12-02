@@ -211,6 +211,45 @@ h3 {
     flex-wrap: wrap;
 }
 
+.search-bar input[type="text"],
+.search-bar input[type="number"],
+.search-bar select {
+    padding: 0.75rem 1.2rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    transition: var(--transition);
+    background-color: white;
+    color: var(--color-text);
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    min-width: 300px;
+}
+
+.search-bar select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    background-size: 1.1em;
+    padding-right: 2.5rem;
+}
+
+.search-bar input:focus,
+.search-bar select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.search-bar input::placeholder {
+    color: #bdc3c7;
+}
+
 .btn {
     padding: 0.75rem 1.5rem;
     border: none;
