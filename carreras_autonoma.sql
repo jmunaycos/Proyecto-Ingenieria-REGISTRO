@@ -3,7 +3,7 @@
 -- Universidad Autónoma del Perú
 -- ================================================
 
-USE anakonda;
+USE anakond1_anakonda;
 
 -- Crear tabla de carreras
 CREATE TABLE IF NOT EXISTS carreras (

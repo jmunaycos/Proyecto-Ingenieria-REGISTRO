@@ -7,7 +7,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'anakonda');
+define('DB_NAME', 'anakond1_anakonda');
 
 // Configuración de CORS
 header('Access-Control-Allow-Origin: *');

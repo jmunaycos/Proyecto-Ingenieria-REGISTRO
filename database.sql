@@ -2,10 +2,10 @@
 -- Ejecutar este script en phpMyAdmin o MySQL Workbench
 
 -- Crear la base de datos si no existe
-CREATE DATABASE IF NOT EXISTS anakonda DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE IF NOT EXISTS anakond1_anakonda DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
 -- Usar la base de datos
-USE anakonda;
+USE anakond1_anakonda;
 
 -- ================================================
 -- TABLA: usuarios_universitarios (registros de estudiantes)
