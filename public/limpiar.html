@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpiar Cookies - Sistema de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            background: white;
+            color: #667eea;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .success {
+            background: #27ae60;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none;
+        }
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 Solución a ERR_TOO_MANY_REDIRECTS</h1>
+        <p>Para solucionar el problema de redirecciones infinitas:</p>
+        
+        <h3>Opción 1: Limpiar Cookies Automáticamente</h3>
+        <button onclick="limpiarTodo()">🗑️ Limpiar Todo y Continuar</button>
+        
+        <h3>Opción 2: Limpiar Manualmente</h3>
+        <ol style="text-align: left; max-width: 500px; margin: 20px auto;">
+            <li>Presiona <code>Ctrl + Shift + Delete</code></li>
+            <li>Selecciona "Cookies" y "Caché"</li>
+            <li>Haz clic en "Borrar datos"</li>
+            <li>Recarga esta página</li>
+        </ol>
+        
+        <div class="success" id="success">
+            ✅ Cookies limpiadas! Redirigiendo en <span id="countdown">3</span>...
+        </div>
+        
+        <hr style="margin: 30px 0; border: 1px solid rgba(255,255,255,0.3);">
+        
+        <h3>Acceso Directo (sin .htaccess)</h3>
+        <a href="index.php" style="display: inline-block; padding: 15px 30px; background: white; color: #667eea; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 5px;">
+            🔐 Ir al Login
+        </a>
+    </div>
+
+    <script>
+        function limpiarTodo() {
+            // Limpiar localStorage
+            localStorage.clear();
+            
+            // Limpiar sessionStorage
+            sessionStorage.clear();
+            
+            // Limpiar cookies
+            document.cookie.split(";").forEach(function(c) {
+                document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+            });
+            
+            // Mostrar mensaje de éxito
+            document.getElementById('success').style.display = 'block';
+            
+            // Contador regresivo
+            let count = 3;
+            const countdown = setInterval(() => {
+                count--;
+                document.getElementById('countdown').textContent = count;
+                if (count <= 0) {
+                    clearInterval(countdown);
+                    window.location.href = 'index.php';
+                }
+            }, 1000);
+        }
+        
+        // Si hay parámetro ?clean, limpiar automáticamente
+        if (window.location.search.includes('clean')) {
+            limpiarTodo();
+        }
+    </script>
+</body>
+</html>
