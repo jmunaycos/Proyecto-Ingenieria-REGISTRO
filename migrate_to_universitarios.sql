@@ -5,7 +5,7 @@
 -- IMPORTANTE: Ejecutar este script SOLO si ya tienes datos en la tabla 'usuarios'
 -- Si es una instalación nueva, solo ejecuta database.sql
 
-USE anakonda;
+USE anakond1_anakonda;
 
 -- Paso 1: Crear la nueva tabla usuarios_universitarios
 CREATE TABLE IF NOT EXISTS usuarios_universitarios (

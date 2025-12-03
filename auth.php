@@ -16,7 +16,7 @@ function getDBConnection() {
     $host = "localhost";
     $user = "root";
     $pass = "";
-    $dbname = "anakonda";
+    $dbname = "anakond1_anakonda";
     
     $conn = new mysqli($host, $user, $pass, $dbname);
     

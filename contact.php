@@ -17,7 +17,7 @@ if (!$skipDB) {
     $host = "localhost"; // o el host que Webcindario te dé
     $user = "root"; // tu usuario MySQL
     $pass = ""; // tu contraseña MySQL
-    $dbname = "anakonda"; // el nombre de tu BD
+    $dbname = "anakond1_anakonda"; // el nombre de tu BD
 
     // Crea conexión
     $conn = new mysqli($host, $user, $pass, $dbname);
