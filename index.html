@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Registro Universitario</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(255,255,255,0.1);
+            padding: 50px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; }
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            font-size: 18px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            margin: 10px;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+        }
+        .info {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        .info h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .info li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .info li:last-child {
+            border-bottom: none;
+        }
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Sistema de Registro</h1>
+        <p>Universidad Autónoma del Perú</p>
+        
+        <a href="public/limpiar.html" class="btn btn-secondary">
+            🧹 Limpiar Cookies Primero
+        </a>
+        
+        <a href="public/index.php" class="btn">
+            🔐 Acceder al Sistema
+        </a>
+        
+        <div class="info">
+            <h3>📝 Credenciales de Prueba</h3>
+            <ul>
+                <li><strong>Admin:</strong> <code>admin</code> / <code>admin123</code></li>
+                <li><strong>Usuario:</strong> <code>usuario</code> / <code>user123</code></li>
+            </ul>
+        </div>
+        
+        <div class="info">
+            <h3>🔗 Enlaces Directos</h3>
+            <ul>
+                <li><a href="public/index.php" style="color: white;">Login</a></li>
+                <li><a href="public/diagnostico.php" style="color: white;">Diagnóstico</a></li>
+                <li><a href="test_mvc.php" style="color: white;">Test MVC</a></li>
+            </ul>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.7;">
+            Versión 2.0.0 MVC | Diciembre 2025
+        </p>
+    </div>
+</body>
+</html>

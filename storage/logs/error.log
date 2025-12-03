@@ -1,0 +1,112 @@
+[03-Dec-2025 03:02:01 America/Lima] PHP Warning:  Undefined array key "rol" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php on line 49
+[03-Dec-2025 03:04:39 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 16
+[03-Dec-2025 03:04:39 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 17
+[03-Dec-2025 03:04:39 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 18
+[03-Dec-2025 03:05:35 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 16
+[03-Dec-2025 03:05:35 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 17
+[03-Dec-2025 03:05:35 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 18
+[03-Dec-2025 03:07:15 America/Lima] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'rol' in 'field list' in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\fix_admin.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\fix_admin.php(11): mysqli->query('SELECT id, user...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\fix_admin.php on line 11
+[03-Dec-2025 03:09:13 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:09:18 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:09:30 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:10:48 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:10:53 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:11:03 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:11:06 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:11:35 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:11:55 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:13:55 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:31:26 America/Lima] POST recibido: Array
+(
+    [dni] => 42176706
+    [nombres] => fernando
+    [apellidos] => Castillo Vega
+    [correo] => castilloferga1@autonoma.edu.pe
+    [celular] => 997587070
+    [carrera] => 1
+    [ciclo] => 6
+    [comentarios] => mejores horarios
+)
+
+[03-Dec-2025 03:31:26 America/Lima] Error en routing: Unknown column 'celular' in 'field list'
+[03-Dec-2025 03:31:28 America/Lima] POST recibido: Array
+(
+    [dni] => 42176706
+    [nombres] => fernando
+    [apellidos] => Castillo Vega
+    [correo] => castilloferga1@autonoma.edu.pe
+    [celular] => 997587070
+    [carrera] => 1
+    [ciclo] => 6
+    [comentarios] => mejores horarios
+)
+
+[03-Dec-2025 03:31:28 America/Lima] Error en routing: Unknown column 'celular' in 'field list'
+[03-Dec-2025 03:32:53 America/Lima] POST recibido: Array
+(
+    [dni] => 42176706
+    [nombres] => fernando
+    [apellidos] => Castillo Vega
+    [correo] => castilloferga1@autonoma.edu.pe
+    [celular] => 997587070
+    [carrera] => 1
+    [ciclo] => 6
+    [comentarios] => mejores horarios
+)
+
+[03-Dec-2025 03:32:53 America/Lima] Error en routing: Unknown column 'celular' in 'field list'
+[03-Dec-2025 03:33:35 America/Lima] POST recibido: Array
+(
+    [dni] => 42176706
+    [nombres] => fernando
+    [apellidos] => Castillo Vega
+    [correo] => castilloferga1@autonoma.edu.pe
+    [celular] => 997587070
+    [carrera] => 1
+    [ciclo] => 6
+    [comentarios] => mejores horarios
+)
+
+[03-Dec-2025 03:33:35 America/Lima] Error en routing: Unknown column 'celular' in 'field list'
+[03-Dec-2025 03:36:23 America/Lima] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php:305
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php(280): StudentController->getEmailTemplate(Array)
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php(95): StudentController->sendWelcomeEmail(Array)
+#2 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\index.php(88): StudentController->store()
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 305
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
