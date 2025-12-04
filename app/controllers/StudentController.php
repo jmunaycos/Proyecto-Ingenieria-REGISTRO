@@ -99,7 +99,7 @@ class StudentController extends Controller {
             
             $this->json([
                 'success' => true,
-                'message' => 'Estudiante registrado exitosamente',
+                'message' => 'opinion del estudiante registrado con exito',
                 'id' => $studentId
             ]);
         } else {
@@ -286,7 +286,7 @@ class StudentController extends Controller {
             $mail->addAddress($studentData['correo'], $studentData['nombres'] . ' ' . $studentData['apellidos']);
             
             $mail->isHTML(true);
-            $mail->Subject = 'Registro Exitoso - Universidad Autónoma del Perú';
+            $mail->Subject = 'Gracias por tu opinión';
             $mail->Body = $this->getEmailTemplate($studentData);
             
             $mail->send();
@@ -306,16 +306,12 @@ class StudentController extends Controller {
         <html>
         <body style='font-family: Arial, sans-serif;'>
             <div style='max-width: 600px; margin: 0 auto; padding: 20px;'>
-                <h2 style='color: #6a1b9a;'>¡Bienvenido a la Universidad Autónoma del Perú!</h2>
+                <h2 style='color: #6a1b9a;'>¡Gracias por tu opinión!</h2>
                 <p>Estimado(a) <strong>{$data['nombres']} {$data['apellidos']}</strong>,</p>
-                <p>Tu registro ha sido exitoso. A continuación los detalles:</p>
-                <ul>
-                    <li><strong>DNI:</strong> {$data['dni']}</li>
-                    <li><strong>Carrera:</strong> {$nombreCarrera}</li>
-                    <li><strong>Ciclo:</strong> {$data['ciclo']}</li>
-                    <li><strong>Correo:</strong> {$data['correo']}</li>
-                </ul>
-                <p>Pronto nos pondremos en contacto contigo.</p>
+                <p>Hemos recibido tus comentarios exitosamente. Agradecemos sinceramente que te hayas tomado el tiempo para compartir tu opinión con nosotros.</p>
+                <p>Tu perspectiva es muy valiosa y será considerada para mejorar la experiencia de nuestros estudiantes.</p>
+                <p>Atentamente,</p>
+                <p><strong>Universidad Autónoma del Perú</strong></p>
                 <p style='color: #666; font-size: 12px;'>Este es un correo automático, por favor no responder.</p>
             </div>
         </body>

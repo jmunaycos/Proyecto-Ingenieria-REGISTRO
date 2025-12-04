@@ -1,10 +1,10 @@
 <?php 
-$title = "Registro de Estudiantes";
+$title = "Opinion del estudiante";
 require_once __DIR__ . '/../layouts/header.php'; 
 ?>
 
 <div class="container" style="max-width: 800px; margin: 40px auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-    <h1 style="text-align: center; color: #6a1b9a; margin-bottom: 10px;">Registro de Estudiantes</h1>
+    <h1 style="text-align: center; color: #6a1b9a; margin-bottom: 10px;">Opinion del estudiante</h1>
     <p style="text-align: center; color: #666; margin-bottom: 30px;">Universidad Autónoma del Perú</p>
     
     <form id="registroForm" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
@@ -122,7 +122,7 @@ require_once __DIR__ . '/../layouts/header.php';
                 type="submit" 
                 style="width: 100%; padding: 14px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 5px; font-size: 16px; font-weight: 600; cursor: pointer;"
             >
-                Registrar Estudiante
+                Registrar tu opinion
             </button>
         </div>
     </form>
