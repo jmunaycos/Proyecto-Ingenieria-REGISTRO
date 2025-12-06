@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+         bootstrap="config/config.php"
+         colors="true"
+         verbose="true"
+         stopOnFailure="false">
+    
+    <!-- Test Suites -->
+    <testsuites>
+        <testsuite name="Models">
+            <directory>tests/models</directory>
+        </testsuite>
+        <testsuite name="Controllers">
+            <directory>tests/controllers</directory>
+        </testsuite>
+        <testsuite name="Integration">
+            <directory>tests/integration</directory>
+        </testsuite>
+    </testsuites>
+    
+    <!-- Code Coverage Configuration -->
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">app/models</directory>
+            <directory suffix=".php">app/controllers</directory>
+        </include>
+        <exclude>
+            <directory>vendor</directory>
+            <directory>tests</directory>
+        </exclude>
+    </coverage>
+    
+    <!-- PHP Configuration -->
+    <php>
+        <ini name="display_errors" value="1"/>
+        <ini name="error_reporting" value="-1"/>
+    </php>
+</phpunit>
