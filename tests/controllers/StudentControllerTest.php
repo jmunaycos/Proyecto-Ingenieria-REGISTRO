@@ -70,20 +70,29 @@ class StudentControllerTest extends TestCase
      */
     public function testDataSanitization()
     {
+        // Test 1: Remover tags HTML
         $dirtyData = '<script>alert("xss")</script>Nombre';
-        $cleanData = htmlspecialchars(strip_tags(trim($dirtyData)), ENT_QUOTES, 'UTF-8');
+        $cleanData = strip_tags($dirtyData);
         
         $this->assertEquals(
-            'Nombre',
+            'alert("xss")Nombre',
             $cleanData,
-            'Los datos deben ser sanitizados correctamente'
+            'Los tags HTML deben ser removidos'
         );
+        
+        // Test 2: Escapar caracteres especiales
+        $cleanDataEscaped = htmlspecialchars($cleanData, ENT_QUOTES, 'UTF-8');
         
         $this->assertStringNotContainsString(
             '<script>',
-            $cleanData,
-            'Los scripts deben ser removidos'
+            $cleanDataEscaped,
+            'Los scripts deben ser removidos o escapados'
         );
+        
+        // Test 3: Validar que strip_tags + trim funciona correctamente
+        $input = '  <b>Texto</b>  ';
+        $output = trim(strip_tags($input));
+        $this->assertEquals('Texto', $output, 'Debe remover tags y espacios');
     }
     
     /**
