@@ -4,6 +4,9 @@
 # Reportes de cobertura
 /coverage/
 
+# Cache de PHPUnit
+.phpunit.result.cache
+
 # Logs
 /storage/logs/*.log
 
