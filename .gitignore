@@ -1,0 +1,23 @@
+# Dependencias de Composer
+/vendor/
+
+# Reportes de cobertura
+/coverage/
+
+# Logs
+/storage/logs/*.log
+
+# Variables de entorno
+.env
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Composer lock (opcional, algunos prefieren incluirlo)
+# composer.lock
