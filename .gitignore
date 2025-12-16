@@ -1,6 +1,9 @@
 # Dependencias de Composer
 /vendor/
 
+# PHPMailer (se instala vía composer)
+/PHPMailer/
+
 # Reportes de cobertura
 /coverage/
 
@@ -9,6 +12,7 @@
 
 # Logs
 /storage/logs/*.log
+!/storage/logs/.gitkeep
 
 # Variables de entorno
 .env

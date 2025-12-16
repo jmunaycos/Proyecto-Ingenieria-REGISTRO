@@ -46,15 +46,17 @@ class StudentController extends Controller {
      */
     public function store() {
         Auth::requireAuth();
-        
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
             $this->json(['success' => false, 'message' => 'Método no permitido'], 405);
             return;
         }
-        
+        $csrf_token = $_POST['csrf_token'] ?? '';
+        if (!verifyCsrfToken($csrf_token)) {
+            $this->json(['success' => false, 'message' => 'Token CSRF inválido. Recargue la página e intente de nuevo.']);
+            return;
+        }
         // Validar campos requeridos
         $errors = $this->validate($_POST, ['dni', 'nombres', 'apellidos', 'correo', 'carrera', 'ciclo']);
-        
         if (!empty($errors)) {
             $this->json(['success' => false, 'message' => 'Todos los campos son requeridos', 'errors' => $errors]);
             return;
@@ -150,6 +152,11 @@ class StudentController extends Controller {
         
         // Sanitizar datos
         $data = $this->sanitizeArray($_POST);
+        
+        // Asegurar que comentarios existe
+        if (!isset($data['comentarios'])) {
+            $data['comentarios'] = '';
+        }
         
         // Normalizar ciclo: extraer solo el número
         $data['ciclo'] = preg_replace('/[^0-9]/', '', $data['ciclo']);

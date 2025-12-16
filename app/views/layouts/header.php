@@ -6,8 +6,8 @@
     <title><?php echo $title ?? APP_NAME; ?></title>
     <link rel="stylesheet" href="<?php echo ASSETS_URL; ?>/css/principal.css">
     <link rel="stylesheet" href="<?php echo ASSETS_URL; ?>/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="<?php echo ASSETS_URL; ?>/js/sweetalert2.min.js"></script>
+    <script src="<?php echo ASSETS_URL; ?>/js/chart.min.js"></script>
 </head>
 <body>
     <?php if (Auth::check()): ?>
