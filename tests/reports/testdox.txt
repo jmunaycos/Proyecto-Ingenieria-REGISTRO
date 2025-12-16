@@ -1,0 +1,99 @@
+Auth
+ [x] Can create auth model instance
+ [x] Username validation
+ [x] Password not empty
+ [x] Password hashing
+ [x] Session data structure
+ [x] Valid roles
+
+Career
+ [ ] Career instantiation
+ [ ] Get all returns array
+ [ ] Career data structure
+ [ ] Get by id returns correct type
+ [ ] Get by id with invalid id
+ [ ] Get all grouped by facultad
+ [ ] Get by facultad
+ [ ] Facultad is not empty
+ [ ] Career name is not empty
+ [ ] Career ids are unique
+ [ ] C r u d methods exist
+
+Student
+ [ ] Can create student model instance
+ [ ] Dni validation
+ [ ] Email validation
+ [ ] Ciclo validation
+ [ ] Required fields
+
+User
+ [ ] User instantiation
+ [ ] Get all returns array
+ [ ] Get by id returns correct type
+ [ ] Get by id with invalid id returns null
+ [ ] User data structure
+ [ ] Get by username
+ [ ] Get by username with invalid username
+ [ ] User roles are valid
+ [ ] Username is not empty
+ [ ] Delete method
+ [ ] Update method
+ [ ] Create method
+ [ ] Created at is valid date
+
+Auth Controller
+ [ ] Auth controller instantiation
+ [ ] Auth controller extends controller
+ [ ] Show login method exists
+ [ ] Process login method exists
+ [ ] Logout method exists
+ [ ] Logout clears session
+ [ ] Controller structure
+
+Student Controller
+ [ ] Can create controller instance
+ [ ] Required fields for student creation
+ [ ] Data sanitization
+ [ ] Json response format
+ [ ] Student data structure
+
+User Controller
+ [ ] User controller instantiation
+ [ ] User controller extends controller
+ [ ] Index method exists
+ [ ] Create method exists
+ [ ] Store method exists
+ [ ] Edit method exists
+ [ ] Update method exists
+ [ ] Delete method exists
+ [ ] Controller has all c r u d methods
+ [ ] C r u d methods are public
+
+Authentication Integration
+ [ ] Complete login flow
+ [ ] Complete logout flow
+ [ ] Role verification after login
+ [ ] Auth and user model integration
+ [ ] Session persistence
+
+Student CRUDIntegration
+ [ ] Complete student read flow
+ [ ] Student career integration
+ [ ] Student search functionality
+ [ ] Student statistics
+ [ ] Student data validation
+ [ ] Data consistency between queries
+
+Student Registration
+ [x] Complete registration flow
+ [x] Registration response
+ [x] Confirmation email structure
+
+System Integration
+ [ ] Complete user workflow
+ [ ] Admin permissions
+ [ ] Data integrity across models
+ [ ] Models independence
+ [ ] All main features available
+ [ ] Multiple queries performance
+

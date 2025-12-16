@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="77" assertions="30" errors="68" warnings="0" failures="0" skipped="0" time="278.478382">
+    <testsuite name="Unit Tests" tests="35" assertions="14" errors="29" warnings="0" failures="0" skipped="0" time="119.760737">
+      <testsuite name="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" tests="6" assertions="14" errors="0" warnings="0" failures="0" skipped="0" time="1.485221">
+        <testcase name="testCanCreateAuthModelInstance" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="19" assertions="1" time="0.747716"/>
+        <testcase name="testUsernameValidation" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="29" assertions="2" time="0.076562"/>
+        <testcase name="testPasswordNotEmpty" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="48" assertions="2" time="0.240040"/>
+        <testcase name="testPasswordHashing" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="66" assertions="2" time="0.249210"/>
+        <testcase name="testSessionDataStructure" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="86" assertions="6" time="0.099246"/>
+        <testcase name="testValidRoles" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="106" assertions="1" time="0.072448"/>
+      </testsuite>
+      <testsuite name="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" tests="11" assertions="0" errors="11" warnings="0" failures="0" skipped="0" time="44.984140">
+        <testcase name="testCareerInstantiation" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="28" assertions="0" time="4.219325">
+          <error type="mysqli_sql_exception">CareerTest::testCareerInstantiation
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Career.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php:16</error>
+        </testcase>
+        <testcase name="testGetAllReturnsArray" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="37" assertions="0" time="4.100122">
+          <error type="mysqli_sql_exception">CareerTest::testGetAllReturnsArray
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Career.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php:16</error>
+        </testcase>
+        <testcase name="testCareerDataStructure" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="47" assertions="0" time="4.075168">
+          <error type="mysqli_sql_exception">CareerTest::testCareerDataStructure
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Career.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php:16</error>
+        </testcase>
+        <testcase name="testGetByIdReturnsCorrectType" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="69" assertions="0" time="4.083167">
+          <error type="mysqli_sql_exception">CareerTest::testGetByIdReturnsCorrectType
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Career.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php:16</error>
+        </testcase>
+        <testcase name="testGetByIdWithInvalidId" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="79" assertions="0" time="4.062892">
+          <error type="mysqli_sql_exception">CareerTest::testGetByIdWithInvalidId
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Career.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php:16</error>
+        </testcase>
+        <testcase name="testGetAllGroupedByFacultad" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="89" assertions="0" time="4.102682">
+          <error type="mysqli_sql_exception">CareerTest::testGetAllGroupedByFacultad
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Career.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php:16</error>
+        </testcase>
+        <testcase name="testGetByFacultad" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="113" assertions="0" time="4.067957">
+          <error type="mysqli_sql_exception">CareerTest::testGetByFacultad
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Career.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php:16</error>
+        </testcase>
+        <testcase name="testFacultadIsNotEmpty" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="135" assertions="0" time="4.049830">
+          <error type="mysqli_sql_exception">CareerTest::testFacultadIsNotEmpty
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Career.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php:16</error>
+        </testcase>
+        <testcase name="testCareerNameIsNotEmpty" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="153" assertions="0" time="4.078601">
+          <error type="mysqli_sql_exception">CareerTest::testCareerNameIsNotEmpty
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Career.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php:16</error>
+        </testcase>
+        <testcase name="testCareerIdsAreUnique" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="171" assertions="0" time="4.080510">
+          <error type="mysqli_sql_exception">CareerTest::testCareerIdsAreUnique
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Career.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php:16</error>
+        </testcase>
+        <testcase name="testCRUDMethodsExist" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="190" assertions="0" time="4.063886">
+          <error type="mysqli_sql_exception">CareerTest::testCRUDMethodsExist
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Career.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php:16</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" tests="5" assertions="0" errors="5" warnings="0" failures="0" skipped="0" time="20.336642">
+        <testcase name="testCanCreateStudentModelInstance" class="StudentTest" classname="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" line="29" assertions="0" time="4.089516">
+          <error type="mysqli_sql_exception">StudentTest::testCanCreateStudentModelInstance
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php:23</error>
+        </testcase>
+        <testcase name="testDniValidation" class="StudentTest" classname="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" line="37" assertions="0" time="4.072625">
+          <error type="mysqli_sql_exception">StudentTest::testDniValidation
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php:23</error>
+        </testcase>
+        <testcase name="testEmailValidation" class="StudentTest" classname="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" line="56" assertions="0" time="4.039780">
+          <error type="mysqli_sql_exception">StudentTest::testEmailValidation
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php:23</error>
+        </testcase>
+        <testcase name="testCicloValidation" class="StudentTest" classname="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" line="75" assertions="0" time="4.060221">
+          <error type="mysqli_sql_exception">StudentTest::testCicloValidation
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php:23</error>
+        </testcase>
+        <testcase name="testRequiredFields" class="StudentTest" classname="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" line="94" assertions="0" time="4.074501">
+          <error type="mysqli_sql_exception">StudentTest::testRequiredFields
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php:23</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" tests="13" assertions="0" errors="13" warnings="0" failures="0" skipped="0" time="52.954734">
+        <testcase name="testUserInstantiation" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="28" assertions="0" time="4.092244">
+          <error type="mysqli_sql_exception">UserTest::testUserInstantiation
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testGetAllReturnsArray" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="37" assertions="0" time="4.054432">
+          <error type="mysqli_sql_exception">UserTest::testGetAllReturnsArray
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testGetByIdReturnsCorrectType" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="47" assertions="0" time="4.043410">
+          <error type="mysqli_sql_exception">UserTest::testGetByIdReturnsCorrectType
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testGetByIdWithInvalidIdReturnsNull" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="57" assertions="0" time="4.079067">
+          <error type="mysqli_sql_exception">UserTest::testGetByIdWithInvalidIdReturnsNull
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testUserDataStructure" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="67" assertions="0" time="4.081562">
+          <error type="mysqli_sql_exception">UserTest::testUserDataStructure
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testGetByUsername" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="93" assertions="0" time="4.102865">
+          <error type="mysqli_sql_exception">UserTest::testGetByUsername
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testGetByUsernameWithInvalidUsername" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="112" assertions="0" time="4.088787">
+          <error type="mysqli_sql_exception">UserTest::testGetByUsernameWithInvalidUsername
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testUserRolesAreValid" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="122" assertions="0" time="4.059529">
+          <error type="mysqli_sql_exception">UserTest::testUserRolesAreValid
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testUsernameIsNotEmpty" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="141" assertions="0" time="4.065359">
+          <error type="mysqli_sql_exception">UserTest::testUsernameIsNotEmpty
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testDeleteMethod" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="159" assertions="0" time="4.088215">
+          <error type="mysqli_sql_exception">UserTest::testDeleteMethod
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testUpdateMethod" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="169" assertions="0" time="4.080988">
+          <error type="mysqli_sql_exception">UserTest::testUpdateMethod
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testCreateMethod" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="178" assertions="0" time="4.064785">
+          <error type="mysqli_sql_exception">UserTest::testCreateMethod
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+        <testcase name="testCreatedAtIsValidDate" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="187" assertions="0" time="4.053491">
+          <error type="mysqli_sql_exception">UserTest::testCreatedAtIsValidDate
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php:16</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Controller Tests" tests="22" assertions="0" errors="22" warnings="0" failures="0" skipped="0" time="89.514388">
+      <testsuite name="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" tests="7" assertions="0" errors="7" warnings="0" failures="0" skipped="0" time="28.530989">
+        <testcase name="testAuthControllerInstantiation" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="40" assertions="0" time="4.084244">
+          <error type="mysqli_sql_exception">AuthControllerTest::testAuthControllerInstantiation
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php:11
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php:24</error>
+        </testcase>
+        <testcase name="testAuthControllerExtendsController" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="49" assertions="0" time="4.056434">
+          <error type="mysqli_sql_exception">AuthControllerTest::testAuthControllerExtendsController
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php:11
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php:24</error>
+        </testcase>
+        <testcase name="testShowLoginMethodExists" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="58" assertions="0" time="4.060810">
+          <error type="mysqli_sql_exception">AuthControllerTest::testShowLoginMethodExists
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php:11
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php:24</error>
+        </testcase>
+        <testcase name="testProcessLoginMethodExists" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="67" assertions="0" time="4.077076">
+          <error type="mysqli_sql_exception">AuthControllerTest::testProcessLoginMethodExists
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php:11
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php:24</error>
+        </testcase>
+        <testcase name="testLogoutMethodExists" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="76" assertions="0" time="4.094534">
+          <error type="mysqli_sql_exception">AuthControllerTest::testLogoutMethodExists
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php:11
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php:24</error>
+        </testcase>
+        <testcase name="testLogoutClearsSession" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="85" assertions="0" time="4.071072">
+          <error type="mysqli_sql_exception">AuthControllerTest::testLogoutClearsSession
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php:11
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php:24</error>
+        </testcase>
+        <testcase name="testControllerStructure" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="106" assertions="0" time="4.086819">
+          <error type="mysqli_sql_exception">AuthControllerTest::testControllerStructure
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php:11
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php:24</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" tests="5" assertions="0" errors="5" warnings="0" failures="0" skipped="0" time="20.315442">
+        <testcase name="testCanCreateControllerInstance" class="StudentControllerTest" classname="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" line="29" assertions="0" time="4.058270">
+          <error type="mysqli_sql_exception">StudentControllerTest::testCanCreateControllerInstance
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php:12
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php:23</error>
+        </testcase>
+        <testcase name="testRequiredFieldsForStudentCreation" class="StudentControllerTest" classname="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" line="37" assertions="0" time="4.093848">
+          <error type="mysqli_sql_exception">StudentControllerTest::testRequiredFieldsForStudentCreation
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php:12
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php:23</error>
+        </testcase>
+        <testcase name="testDataSanitization" class="StudentControllerTest" classname="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" line="71" assertions="0" time="4.052337">
+          <error type="mysqli_sql_exception">StudentControllerTest::testDataSanitization
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php:12
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php:23</error>
+        </testcase>
+        <testcase name="testJsonResponseFormat" class="StudentControllerTest" classname="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" line="101" assertions="0" time="4.029638">
+          <error type="mysqli_sql_exception">StudentControllerTest::testJsonResponseFormat
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php:12
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php:23</error>
+        </testcase>
+        <testcase name="testStudentDataStructure" class="StudentControllerTest" classname="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" line="118" assertions="0" time="4.081349">
+          <error type="mysqli_sql_exception">StudentControllerTest::testStudentDataStructure
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php:12
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php:23</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" tests="10" assertions="0" errors="10" warnings="0" failures="0" skipped="0" time="40.667957">
+        <testcase name="testUserControllerInstantiation" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="30" assertions="0" time="4.081193">
+          <error type="mysqli_sql_exception">UserControllerTest::testUserControllerInstantiation
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\UserController.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php:18</error>
+        </testcase>
+        <testcase name="testUserControllerExtendsController" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="39" assertions="0" time="4.061042">
+          <error type="mysqli_sql_exception">UserControllerTest::testUserControllerExtendsController
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\UserController.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php:18</error>
+        </testcase>
+        <testcase name="testIndexMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="48" assertions="0" time="4.047362">
+          <error type="mysqli_sql_exception">UserControllerTest::testIndexMethodExists
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\UserController.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php:18</error>
+        </testcase>
+        <testcase name="testCreateMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="57" assertions="0" time="4.077248">
+          <error type="mysqli_sql_exception">UserControllerTest::testCreateMethodExists
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\UserController.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php:18</error>
+        </testcase>
+        <testcase name="testStoreMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="66" assertions="0" time="4.056620">
+          <error type="mysqli_sql_exception">UserControllerTest::testStoreMethodExists
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\UserController.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php:18</error>
+        </testcase>
+        <testcase name="testEditMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="75" assertions="0" time="4.079834">
+          <error type="mysqli_sql_exception">UserControllerTest::testEditMethodExists
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\UserController.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php:18</error>
+        </testcase>
+        <testcase name="testUpdateMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="84" assertions="0" time="4.048049">
+          <error type="mysqli_sql_exception">UserControllerTest::testUpdateMethodExists
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\UserController.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php:18</error>
+        </testcase>
+        <testcase name="testDeleteMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="93" assertions="0" time="4.090334">
+          <error type="mysqli_sql_exception">UserControllerTest::testDeleteMethodExists
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\UserController.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php:18</error>
+        </testcase>
+        <testcase name="testControllerHasAllCRUDMethods" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="102" assertions="0" time="4.054906">
+          <error type="mysqli_sql_exception">UserControllerTest::testControllerHasAllCRUDMethods
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\UserController.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php:18</error>
+        </testcase>
+        <testcase name="testCRUDMethodsArePublic" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="118" assertions="0" time="4.071368">
+          <error type="mysqli_sql_exception">UserControllerTest::testCRUDMethodsArePublic
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\UserController.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php:18</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Integration Tests" tests="20" assertions="16" errors="17" warnings="0" failures="0" skipped="0" time="69.203257">
+      <testsuite name="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" tests="5" assertions="0" errors="5" warnings="0" failures="0" skipped="0" time="20.351133">
+        <testcase name="testCompleteLoginFlow" class="AuthenticationIntegrationTest" classname="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" line="36" assertions="0" time="4.076617">
+          <error type="mysqli_sql_exception">AuthenticationIntegrationTest::testCompleteLoginFlow
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php:17</error>
+        </testcase>
+        <testcase name="testCompleteLogoutFlow" class="AuthenticationIntegrationTest" classname="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" line="69" assertions="0" time="4.055802">
+          <error type="mysqli_sql_exception">AuthenticationIntegrationTest::testCompleteLogoutFlow
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php:17</error>
+        </testcase>
+        <testcase name="testRoleVerificationAfterLogin" class="AuthenticationIntegrationTest" classname="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" line="93" assertions="0" time="4.080324">
+          <error type="mysqli_sql_exception">AuthenticationIntegrationTest::testRoleVerificationAfterLogin
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php:17</error>
+        </testcase>
+        <testcase name="testAuthAndUserModelIntegration" class="AuthenticationIntegrationTest" classname="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" line="124" assertions="0" time="4.051862">
+          <error type="mysqli_sql_exception">AuthenticationIntegrationTest::testAuthAndUserModelIntegration
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php:17</error>
+        </testcase>
+        <testcase name="testSessionPersistence" class="AuthenticationIntegrationTest" classname="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" line="149" assertions="0" time="4.086527">
+          <error type="mysqli_sql_exception">AuthenticationIntegrationTest::testSessionPersistence
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php:17</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" tests="6" assertions="0" errors="6" warnings="0" failures="0" skipped="0" time="24.328784">
+        <testcase name="testCompleteStudentReadFlow" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="32" assertions="0" time="4.054607">
+          <error type="mysqli_sql_exception">StudentCRUDIntegrationTest::testCompleteStudentReadFlow
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php:18</error>
+        </testcase>
+        <testcase name="testStudentCareerIntegration" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="64" assertions="0" time="4.049316">
+          <error type="mysqli_sql_exception">StudentCRUDIntegrationTest::testStudentCareerIntegration
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php:18</error>
+        </testcase>
+        <testcase name="testStudentSearchFunctionality" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="87" assertions="0" time="4.053584">
+          <error type="mysqli_sql_exception">StudentCRUDIntegrationTest::testStudentSearchFunctionality
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php:18</error>
+        </testcase>
+        <testcase name="testStudentStatistics" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="106" assertions="0" time="4.055024">
+          <error type="mysqli_sql_exception">StudentCRUDIntegrationTest::testStudentStatistics
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php:18</error>
+        </testcase>
+        <testcase name="testStudentDataValidation" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="119" assertions="0" time="4.060367">
+          <error type="mysqli_sql_exception">StudentCRUDIntegrationTest::testStudentDataValidation
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php:18</error>
+        </testcase>
+        <testcase name="testDataConsistencyBetweenQueries" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="153" assertions="0" time="4.055886">
+          <error type="mysqli_sql_exception">StudentCRUDIntegrationTest::testDataConsistencyBetweenQueries
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\Student.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php:18</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="StudentRegistrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentRegistrationTest.php" tests="3" assertions="16" errors="0" warnings="0" failures="0" skipped="0" time="0.121278">
+        <testcase name="testCompleteRegistrationFlow" class="StudentRegistrationTest" classname="StudentRegistrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentRegistrationTest.php" line="21" assertions="8" time="0.055517"/>
+        <testcase name="testRegistrationResponse" class="StudentRegistrationTest" classname="StudentRegistrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentRegistrationTest.php" line="76" assertions="2" time="0.063758"/>
+        <testcase name="testConfirmationEmailStructure" class="StudentRegistrationTest" classname="StudentRegistrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentRegistrationTest.php" line="98" assertions="6" time="0.002003"/>
+      </testsuite>
+      <testsuite name="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" tests="6" assertions="0" errors="6" warnings="0" failures="0" skipped="0" time="24.402061">
+        <testcase name="testCompleteUserWorkflow" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="41" assertions="0" time="4.055817">
+          <error type="mysqli_sql_exception">SystemIntegrationTest::testCompleteUserWorkflow
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php:21</error>
+        </testcase>
+        <testcase name="testAdminPermissions" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="72" assertions="0" time="4.064043">
+          <error type="mysqli_sql_exception">SystemIntegrationTest::testAdminPermissions
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php:21</error>
+        </testcase>
+        <testcase name="testDataIntegrityAcrossModels" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="105" assertions="0" time="4.063934">
+          <error type="mysqli_sql_exception">SystemIntegrationTest::testDataIntegrityAcrossModels
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php:21</error>
+        </testcase>
+        <testcase name="testModelsIndependence" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="129" assertions="0" time="4.075942">
+          <error type="mysqli_sql_exception">SystemIntegrationTest::testModelsIndependence
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php:21</error>
+        </testcase>
+        <testcase name="testAllMainFeaturesAvailable" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="150" assertions="0" time="4.056818">
+          <error type="mysqli_sql_exception">SystemIntegrationTest::testAllMainFeaturesAvailable
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php:21</error>
+        </testcase>
+        <testcase name="testMultipleQueriesPerformance" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="170" assertions="0" time="4.085507">
+          <error type="mysqli_sql_exception">SystemIntegrationTest::testMultipleQueriesPerformance
+mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:15
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
+C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php:21</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
