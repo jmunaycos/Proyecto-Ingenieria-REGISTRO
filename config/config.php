@@ -40,6 +40,9 @@ define('SMTP_FROM_NAME', 'Opinión Estudiante');
 define('ROLE_ADMIN', 'admin');
 define('ROLE_USER', 'usuario');
 
+// Cargar funciones helpers
+require_once BASE_PATH . '/helpers/functions.php';
+
 // Autoload de clases
 spl_autoload_register(function ($class) {
     $paths = [
