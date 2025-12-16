@@ -10,6 +10,7 @@ require_once __DIR__ . '/../layouts/header.php';
     </div>
     
     <form method="POST" action="index.php?route=login" style="display: flex; flex-direction: column; gap: 20px;">
+        <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(csrfToken()); ?>">
         <div>
             <label for="username" style="display: block; margin-bottom: 8px; color: #333; font-weight: 500;">Usuario</label>
             <input 

@@ -110,3 +110,52 @@ Stack trace:
 [03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
 [03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
 [03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[13-Dec-2025 19:57:47 America/Lima] PHP Fatal error:  Uncaught Error: Call to undefined function csrfToken() in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php:13
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\Controller.php(20): require_once()
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php(19): Controller->view('auth/login')
+#2 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\index.php(58): AuthController->showLogin()
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php on line 13
+[13-Dec-2025 19:59:29 America/Lima] PHP Fatal error:  Uncaught Error: Call to undefined function csrfToken() in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php:13
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\Controller.php(20): require_once()
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php(19): Controller->view('auth/login')
+#2 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\index.php(58): AuthController->showLogin()
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php on line 13
+[13-Dec-2025 20:00:01 America/Lima] PHP Fatal error:  Uncaught Error: Call to undefined function csrfToken() in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php:13
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\Controller.php(20): require_once()
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php(19): Controller->view('auth/login')
+#2 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\index.php(58): AuthController->showLogin()
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php on line 13
+[13-Dec-2025 20:13:46 America/Lima] Error en routing: Unknown column 'c.codigo' in 'on clause'
+[13-Dec-2025 20:13:49 America/Lima] Error en routing: Unknown column 'c.codigo' in 'on clause'
+[13-Dec-2025 20:22:47 America/Lima] UPDATE - ID recibido: 9
+[13-Dec-2025 20:22:47 America/Lima] UPDATE - POST data: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"10","comentarios":"dfsdfsdsdgsggsdfgsgsdgsgsgsg"}
+[13-Dec-2025 20:22:47 America/Lima] UPDATE - Datos sanitizados: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"10","comentarios":"dfsdfsdsdgsggsdfgsgsdgsgsgsg"}
+[13-Dec-2025 20:22:47 America/Lima] UPDATE - Resultado: SUCCESS
+[13-Dec-2025 20:23:04 America/Lima] UPDATE - ID recibido: 9
+[13-Dec-2025 20:23:04 America/Lima] UPDATE - POST data: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"9","comentarios":"1234556778899"}
+[13-Dec-2025 20:23:04 America/Lima] UPDATE - Datos sanitizados: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"9","comentarios":"1234556778899"}
+[13-Dec-2025 20:23:04 America/Lima] UPDATE - Resultado: SUCCESS
+[13-Dec-2025 20:23:13 America/Lima] UPDATE - ID recibido: 9
+[13-Dec-2025 20:23:13 America/Lima] UPDATE - POST data: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"9","comentarios":"1234556778899"}
+[13-Dec-2025 20:23:13 America/Lima] UPDATE - Datos sanitizados: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"9","comentarios":"1234556778899"}
+[13-Dec-2025 20:23:13 America/Lima] UPDATE - Resultado: SUCCESS
+[13-Dec-2025 20:25:06 America/Lima] Error en routing: Ruta no encontrada
+[13-Dec-2025 20:25:20 America/Lima] UPDATE - ID recibido: 9
+[13-Dec-2025 20:25:20 America/Lima] UPDATE - POST data: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"10","comentarios":"3453535666666"}
+[13-Dec-2025 20:25:20 America/Lima] UPDATE - Datos sanitizados: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"10","comentarios":"3453535666666"}
+[13-Dec-2025 20:25:20 America/Lima] UPDATE - Resultado: SUCCESS
+[13-Dec-2025 20:26:13 America/Lima] Error en routing: Ruta no encontrada
+[13-Dec-2025 20:26:29 America/Lima] UPDATE - ID recibido: 9
+[13-Dec-2025 20:26:29 America/Lima] UPDATE - POST data: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Civil","ciclo":"9","comentarios":"muy bien se\u00f1ores"}
+[13-Dec-2025 20:26:29 America/Lima] UPDATE - Datos sanitizados: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Civil","ciclo":"9","comentarios":"muy bien se\u00f1ores"}
+[13-Dec-2025 20:26:29 America/Lima] UPDATE - Resultado: SUCCESS
+[13-Dec-2025 20:26:32 America/Lima] Error en routing: Ruta no encontrada
+[13-Dec-2025 20:26:42 America/Lima] Error en routing: Ruta no encontrada
+[13-Dec-2025 20:26:47 America/Lima] Error en routing: Ruta no encontrada
+[13-Dec-2025 20:27:37 America/Lima] Error en routing: Ruta no encontrada

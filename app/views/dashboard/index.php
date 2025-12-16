@@ -291,6 +291,14 @@ const colors = {
     info: ['#4facfe', '#00f2fe']
 };
 
+// Verificar que Chart.js esté disponible
+if (typeof Chart === 'undefined') {
+    console.error('Chart.js no está cargado!');
+    alert('Error: Chart.js no se ha cargado correctamente. Verifica la conexión a internet.');
+} else {
+    console.log('Chart.js cargado correctamente');
+}
+
 // Gráfico de carreras mejorado
 const carrerasData = <?php echo json_encode($studentsByCarrera); ?>;
 const ctxCarreras = document.getElementById('carrerasChart').getContext('2d');

@@ -15,6 +15,11 @@
                onmouseout="this.style.background='transparent'">
                 Estudiantes
             </a>
+            <a href="index.php?route=usuarios" style="color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: background 0.3s;"
+               onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
+               onmouseout="this.style.background='transparent'">
+                Usuarios
+            </a>
         <?php endif; ?>
         
         <a href="index.php?route=registro" style="color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: background 0.3s;"

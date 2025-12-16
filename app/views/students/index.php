@@ -276,9 +276,16 @@ document.getElementById('formEditar').addEventListener('submit', async function(
             body: formData
         });
         
+        const contentType = response.headers.get("content-type");
+        
+        if (!contentType || !contentType.includes("application/json")) {
+            throw new Error('La respuesta del servidor no es JSON válido');
+        }
+        
         const data = await response.json();
         
         if (data.success) {
+            cerrarModal();
             Swal.fire('Éxito', data.message, 'success').then(() => {
                 location.reload();
             });
@@ -286,7 +293,7 @@ document.getElementById('formEditar').addEventListener('submit', async function(
             Swal.fire('Error', data.message, 'error');
         }
     } catch (error) {
-        Swal.fire('Error', 'Error de conexión', 'error');
+        Swal.fire('Error', 'Error de conexión: ' + error.message, 'error');
     }
 });
 

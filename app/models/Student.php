@@ -188,9 +188,9 @@ class Student {
      * @return array
      */
     public function countByCarrera() {
-        $query = "SELECT carrera as nombre_carrera, COUNT(*) as total 
-                  FROM usuarios_universitarios 
-                  GROUP BY carrera 
+        $query = "SELECT u.carrera as nombre_carrera, COUNT(*) as total 
+                  FROM usuarios_universitarios u
+                  GROUP BY u.carrera
                   ORDER BY total DESC";
         
         $result = $this->conn->query($query);
