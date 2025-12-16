@@ -126,6 +126,32 @@ try {
             }
             break;
             
+        case 'usuarios':
+            $controller = new UserController();
+            switch ($action) {
+                case 'index':
+                case '':
+                    $controller->index();
+                    break;
+                case 'create':
+                    $controller->create();
+                    break;
+                case 'store':
+                    $controller->store();
+                    break;
+                case 'show':
+                    $controller->show($param);
+                    break;
+                case 'update':
+                    $controller->update($param);
+                    break;
+                case 'delete':
+                    $controller->delete($param);
+                    break;
+                default:
+                    throw new Exception('Acción de usuario no encontrada');
+            }
+            break;
         default:
             throw new Exception('Ruta no encontrada');
     }

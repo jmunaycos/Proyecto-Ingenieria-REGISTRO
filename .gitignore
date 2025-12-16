@@ -1,14 +1,17 @@
 # Dependencias de Composer
 /vendor/
 
-# Reportes de cobertura
-/coverage/
+# PHPMailer (se instala vía composer)
+/PHPMailer/
 
-# Cache de PHPUnit
+# Reportes de cobertura y pruebas (NO para producción)
+/tests/coverage/
+/tests/reports/
 .phpunit.result.cache
 
 # Logs
 /storage/logs/*.log
+!/storage/logs/.gitkeep
 
 # Variables de entorno
 .env
@@ -22,5 +25,7 @@
 .DS_Store
 Thumbs.db
 
-# Composer lock (opcional, algunos prefieren incluirlo)
-# composer.lock
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
