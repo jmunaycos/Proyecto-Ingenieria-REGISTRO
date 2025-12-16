@@ -4,9 +4,14 @@
 # PHPMailer (se instala vía composer)
 /PHPMailer/
 
-# Reportes de cobertura y pruebas (NO para producción)
-/tests/coverage/
-/tests/reports/
+# Archivos de desarrollo (NO para producción)
+/tests/
+phpunit.xml
+CHANGELOG.md
+README.md
+SECURITY.md
+composer.json
+composer.lock
 .phpunit.result.cache
 
 # Logs
