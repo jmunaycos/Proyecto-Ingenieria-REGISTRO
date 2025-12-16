@@ -4,10 +4,9 @@
 # PHPMailer (se instala vía composer)
 /PHPMailer/
 
-# Reportes de cobertura
-/coverage/
-
-# Cache de PHPUnit
+# Reportes de cobertura y pruebas (NO para producción)
+/tests/coverage/
+/tests/reports/
 .phpunit.result.cache
 
 # Logs
@@ -26,5 +25,7 @@
 .DS_Store
 Thumbs.db
 
-# Composer lock (opcional, algunos prefieren incluirlo)
-# composer.lock
+# Archivos temporales
+*.tmp
+*.temp
+*.bak

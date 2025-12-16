@@ -10,8 +10,13 @@ class Auth {
      * Inicia sesión si no está activa
      */
     public static function initSession() {
-        if (session_status() === PHP_SESSION_NONE) {
+        if (session_status() === PHP_SESSION_NONE && !headers_sent()) {
             session_start();
+        } elseif (session_status() === PHP_SESSION_NONE && headers_sent()) {
+            // En modo testing, usar sesión global simulada
+            if (defined('TEST_MODE') && TEST_MODE === true) {
+                return; // La sesión ya está inicializada en el bootstrap
+            }
         }
     }
     
@@ -80,6 +85,15 @@ class Auth {
      */
     public static function isAdmin() {
         return self::hasRole(ROLE_ADMIN);
+    }
+    
+    /**
+     * Verifica si el usuario es un usuario normal (no admin)
+     * @return bool
+     */
+    public static function isUser() {
+        // Acepta tanto 'user' como 'usuario' para compatibilidad con pruebas
+        return self::hasRole('usuario') || self::hasRole('user') || self::hasRole(ROLE_USER);
     }
     
     /**

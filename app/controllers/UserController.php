@@ -96,6 +96,30 @@ class UserController extends Controller {
     }
     
     /**
+     * Muestra el formulario de edición de usuario
+     */
+    public function edit($id) {
+        Auth::requireAdmin();
+        
+        $user = $this->userModel->getById($id);
+        
+        if (!$user) {
+            $_SESSION['error'] = 'Usuario no encontrado';
+            $this->redirect('index.php?route=usuarios');
+            return;
+        }
+        
+        // No permitir editar el propio usuario desde aquí
+        if ($id == Auth::id()) {
+            $_SESSION['error'] = 'No puede editar su propio usuario desde esta sección';
+            $this->redirect('index.php?route=usuarios');
+            return;
+        }
+        
+        $this->view('users/edit', ['user' => $user]);
+    }
+    
+    /**
      * Actualiza un usuario
      */
     public function update($id) {
