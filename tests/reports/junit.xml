@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
+<<<<<<< Updated upstream
   <testsuite name="" tests="77" assertions="30" errors="68" warnings="0" failures="0" skipped="0" time="278.478382">
     <testsuite name="Unit Tests" tests="35" assertions="14" errors="29" warnings="0" failures="0" skipped="0" time="119.760737">
       <testsuite name="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" tests="6" assertions="14" errors="0" warnings="0" failures="0" skipped="0" time="1.485221">
@@ -670,6 +671,112 @@ C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\database.php:27
 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\models\User.php:13
 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php:21</error>
         </testcase>
+=======
+  <testsuite name="" tests="77" assertions="331" errors="0" warnings="0" failures="0" skipped="0" time="0.592474">
+    <testsuite name="Unit Tests" tests="35" assertions="147" errors="0" warnings="0" failures="0" skipped="0" time="0.378913">
+      <testsuite name="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" tests="6" assertions="14" errors="0" warnings="0" failures="0" skipped="0" time="0.242471">
+        <testcase name="testCanCreateAuthModelInstance" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="19" assertions="1" time="0.016363"/>
+        <testcase name="testUsernameValidation" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="29" assertions="2" time="0.005502"/>
+        <testcase name="testPasswordNotEmpty" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="48" assertions="2" time="0.013093"/>
+        <testcase name="testPasswordHashing" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="66" assertions="2" time="0.199967"/>
+        <testcase name="testSessionDataStructure" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="86" assertions="6" time="0.004271"/>
+        <testcase name="testValidRoles" class="AuthTest" classname="AuthTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\AuthTest.php" line="106" assertions="1" time="0.003274"/>
+      </testsuite>
+      <testsuite name="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" tests="11" assertions="93" errors="0" warnings="0" failures="0" skipped="0" time="0.076104">
+        <testcase name="testCareerInstantiation" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="28" assertions="1" time="0.017099"/>
+        <testcase name="testGetAllReturnsArray" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="37" assertions="1" time="0.005342"/>
+        <testcase name="testCareerDataStructure" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="47" assertions="3" time="0.004717"/>
+        <testcase name="testGetByIdReturnsCorrectType" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="69" assertions="1" time="0.005761"/>
+        <testcase name="testGetByIdWithInvalidId" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="79" assertions="1" time="0.005959"/>
+        <testcase name="testGetAllGroupedByFacultad" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="89" assertions="43" time="0.010626"/>
+        <testcase name="testGetByFacultad" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="113" assertions="4" time="0.005019"/>
+        <testcase name="testFacultadIsNotEmpty" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="135" assertions="17" time="0.007739"/>
+        <testcase name="testCareerNameIsNotEmpty" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="153" assertions="17" time="0.006458"/>
+        <testcase name="testCareerIdsAreUnique" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="171" assertions="1" time="0.004234"/>
+        <testcase name="testCRUDMethodsExist" class="CareerTest" classname="CareerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\CareerTest.php" line="190" assertions="4" time="0.003149"/>
+      </testsuite>
+      <testsuite name="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" tests="5" assertions="19" errors="0" warnings="0" failures="0" skipped="0" time="0.017861">
+        <testcase name="testCanCreateStudentModelInstance" class="StudentTest" classname="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" line="29" assertions="1" time="0.002625"/>
+        <testcase name="testDniValidation" class="StudentTest" classname="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" line="37" assertions="2" time="0.003098"/>
+        <testcase name="testEmailValidation" class="StudentTest" classname="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" line="56" assertions="2" time="0.005087"/>
+        <testcase name="testCicloValidation" class="StudentTest" classname="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" line="75" assertions="2" time="0.002872"/>
+        <testcase name="testRequiredFields" class="StudentTest" classname="StudentTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\StudentTest.php" line="94" assertions="12" time="0.004179"/>
+      </testsuite>
+      <testsuite name="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" tests="13" assertions="21" errors="0" warnings="0" failures="0" skipped="0" time="0.042478">
+        <testcase name="testUserInstantiation" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="28" assertions="1" time="0.002277"/>
+        <testcase name="testGetAllReturnsArray" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="37" assertions="1" time="0.003069"/>
+        <testcase name="testGetByIdReturnsCorrectType" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="47" assertions="1" time="0.003391"/>
+        <testcase name="testGetByIdWithInvalidIdReturnsNull" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="57" assertions="1" time="0.003273"/>
+        <testcase name="testUserDataStructure" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="67" assertions="5" time="0.003648"/>
+        <testcase name="testGetByUsername" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="93" assertions="2" time="0.003702"/>
+        <testcase name="testGetByUsernameWithInvalidUsername" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="112" assertions="1" time="0.003191"/>
+        <testcase name="testUserRolesAreValid" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="122" assertions="2" time="0.003147"/>
+        <testcase name="testUsernameIsNotEmpty" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="141" assertions="2" time="0.004483"/>
+        <testcase name="testDeleteMethod" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="159" assertions="1" time="0.002288"/>
+        <testcase name="testUpdateMethod" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="169" assertions="1" time="0.002595"/>
+        <testcase name="testCreateMethod" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="178" assertions="1" time="0.002268"/>
+        <testcase name="testCreatedAtIsValidDate" class="UserTest" classname="UserTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\models\UserTest.php" line="187" assertions="2" time="0.005146"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Controller Tests" tests="22" assertions="53" errors="0" warnings="0" failures="0" skipped="0" time="0.077388">
+      <testsuite name="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" tests="7" assertions="10" errors="0" warnings="0" failures="0" skipped="0" time="0.026438">
+        <testcase name="testAuthControllerInstantiation" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="40" assertions="1" time="0.002204"/>
+        <testcase name="testAuthControllerExtendsController" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="49" assertions="1" time="0.002823"/>
+        <testcase name="testShowLoginMethodExists" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="58" assertions="1" time="0.003872"/>
+        <testcase name="testProcessLoginMethodExists" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="67" assertions="1" time="0.002337"/>
+        <testcase name="testLogoutMethodExists" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="76" assertions="1" time="0.003865"/>
+        <testcase name="testLogoutClearsSession" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="85" assertions="2" time="0.007961"/>
+        <testcase name="testControllerStructure" class="AuthControllerTest" classname="AuthControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\AuthControllerTest.php" line="106" assertions="3" time="0.003375"/>
+      </testsuite>
+      <testsuite name="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" tests="5" assertions="23" errors="0" warnings="0" failures="0" skipped="0" time="0.023539">
+        <testcase name="testCanCreateControllerInstance" class="StudentControllerTest" classname="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" line="29" assertions="1" time="0.005908"/>
+        <testcase name="testRequiredFieldsForStudentCreation" class="StudentControllerTest" classname="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" line="37" assertions="7" time="0.004302"/>
+        <testcase name="testDataSanitization" class="StudentControllerTest" classname="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" line="71" assertions="3" time="0.005516"/>
+        <testcase name="testJsonResponseFormat" class="StudentControllerTest" classname="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" line="101" assertions="4" time="0.003032"/>
+        <testcase name="testStudentDataStructure" class="StudentControllerTest" classname="StudentControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\StudentControllerTest.php" line="118" assertions="8" time="0.004780"/>
+      </testsuite>
+      <testsuite name="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" tests="10" assertions="20" errors="0" warnings="0" failures="0" skipped="0" time="0.027411">
+        <testcase name="testUserControllerInstantiation" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="30" assertions="1" time="0.003785"/>
+        <testcase name="testUserControllerExtendsController" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="39" assertions="1" time="0.002337"/>
+        <testcase name="testIndexMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="48" assertions="1" time="0.002310"/>
+        <testcase name="testCreateMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="57" assertions="1" time="0.002294"/>
+        <testcase name="testStoreMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="66" assertions="1" time="0.002316"/>
+        <testcase name="testEditMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="75" assertions="1" time="0.002311"/>
+        <testcase name="testUpdateMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="84" assertions="1" time="0.002308"/>
+        <testcase name="testDeleteMethodExists" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="93" assertions="1" time="0.002388"/>
+        <testcase name="testControllerHasAllCRUDMethods" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="102" assertions="6" time="0.004415"/>
+        <testcase name="testCRUDMethodsArePublic" class="UserControllerTest" classname="UserControllerTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\controllers\UserControllerTest.php" line="118" assertions="6" time="0.002947"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Integration Tests" tests="20" assertions="131" errors="0" warnings="0" failures="0" skipped="0" time="0.136172">
+      <testsuite name="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" tests="5" assertions="25" errors="0" warnings="0" failures="0" skipped="0" time="0.030818">
+        <testcase name="testCompleteLoginFlow" class="AuthenticationIntegrationTest" classname="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" line="36" assertions="7" time="0.005108"/>
+        <testcase name="testCompleteLogoutFlow" class="AuthenticationIntegrationTest" classname="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" line="69" assertions="3" time="0.007723"/>
+        <testcase name="testRoleVerificationAfterLogin" class="AuthenticationIntegrationTest" classname="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" line="93" assertions="6" time="0.009273"/>
+        <testcase name="testAuthAndUserModelIntegration" class="AuthenticationIntegrationTest" classname="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" line="124" assertions="3" time="0.005418"/>
+        <testcase name="testSessionPersistence" class="AuthenticationIntegrationTest" classname="AuthenticationIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\AuthenticationIntegrationTest.php" line="149" assertions="6" time="0.003296"/>
+      </testsuite>
+      <testsuite name="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" tests="6" assertions="63" errors="0" warnings="0" failures="0" skipped="0" time="0.046094">
+        <testcase name="testCompleteStudentReadFlow" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="32" assertions="7" time="0.007060"/>
+        <testcase name="testStudentCareerIntegration" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="64" assertions="18" time="0.007801"/>
+        <testcase name="testStudentSearchFunctionality" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="87" assertions="1" time="0.004219"/>
+        <testcase name="testStudentStatistics" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="106" assertions="4" time="0.010908"/>
+        <testcase name="testStudentDataValidation" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="119" assertions="32" time="0.010859"/>
+        <testcase name="testDataConsistencyBetweenQueries" class="StudentCRUDIntegrationTest" classname="StudentCRUDIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentCRUDIntegrationTest.php" line="153" assertions="1" time="0.005246"/>
+      </testsuite>
+      <testsuite name="StudentRegistrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentRegistrationTest.php" tests="3" assertions="16" errors="0" warnings="0" failures="0" skipped="0" time="0.009746">
+        <testcase name="testCompleteRegistrationFlow" class="StudentRegistrationTest" classname="StudentRegistrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentRegistrationTest.php" line="21" assertions="8" time="0.003824"/>
+        <testcase name="testRegistrationResponse" class="StudentRegistrationTest" classname="StudentRegistrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentRegistrationTest.php" line="76" assertions="2" time="0.002329"/>
+        <testcase name="testConfirmationEmailStructure" class="StudentRegistrationTest" classname="StudentRegistrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\StudentRegistrationTest.php" line="98" assertions="6" time="0.003593"/>
+      </testsuite>
+      <testsuite name="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" tests="6" assertions="27" errors="0" warnings="0" failures="0" skipped="0" time="0.049514">
+        <testcase name="testCompleteUserWorkflow" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="41" assertions="5" time="0.008082"/>
+        <testcase name="testAdminPermissions" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="72" assertions="3" time="0.006419"/>
+        <testcase name="testDataIntegrityAcrossModels" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="105" assertions="8" time="0.006514"/>
+        <testcase name="testModelsIndependence" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="129" assertions="3" time="0.007492"/>
+        <testcase name="testAllMainFeaturesAvailable" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="150" assertions="7" time="0.006197"/>
+        <testcase name="testMultipleQueriesPerformance" class="SystemIntegrationTest" classname="SystemIntegrationTest" file="C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\tests\integration\SystemIntegrationTest.php" line="170" assertions="1" time="0.014811"/>
+>>>>>>> Stashed changes
       </testsuite>
     </testsuite>
   </testsuite>

@@ -122,7 +122,11 @@ class UserTest extends TestCase
     public function testUserRolesAreValid()
     {
         $users = $this->user->getAll();
+<<<<<<< Updated upstream
         $validRoles = ['admin', 'user'];
+=======
+        $validRoles = ['admin', 'usuario']; // Roles en español
+>>>>>>> Stashed changes
         
         if (!empty($users)) {
             foreach ($users as $user) {

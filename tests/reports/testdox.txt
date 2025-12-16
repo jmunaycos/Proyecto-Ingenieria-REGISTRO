@@ -7,6 +7,7 @@ Auth
  [x] Valid roles
 
 Career
+<<<<<<< Updated upstream
  [ ] Career instantiation
  [ ] Get all returns array
  [ ] Career data structure
@@ -83,6 +84,84 @@ Student CRUDIntegration
  [ ] Student statistics
  [ ] Student data validation
  [ ] Data consistency between queries
+=======
+ [x] Career instantiation
+ [x] Get all returns array
+ [x] Career data structure
+ [x] Get by id returns correct type
+ [x] Get by id with invalid id
+ [x] Get all grouped by facultad
+ [x] Get by facultad
+ [x] Facultad is not empty
+ [x] Career name is not empty
+ [x] Career ids are unique
+ [x] C r u d methods exist
+
+Student
+ [x] Can create student model instance
+ [x] Dni validation
+ [x] Email validation
+ [x] Ciclo validation
+ [x] Required fields
+
+User
+ [x] User instantiation
+ [x] Get all returns array
+ [x] Get by id returns correct type
+ [x] Get by id with invalid id returns null
+ [x] User data structure
+ [x] Get by username
+ [x] Get by username with invalid username
+ [x] User roles are valid
+ [x] Username is not empty
+ [x] Delete method
+ [x] Update method
+ [x] Create method
+ [x] Created at is valid date
+
+Auth Controller
+ [x] Auth controller instantiation
+ [x] Auth controller extends controller
+ [x] Show login method exists
+ [x] Process login method exists
+ [x] Logout method exists
+ [x] Logout clears session
+ [x] Controller structure
+
+Student Controller
+ [x] Can create controller instance
+ [x] Required fields for student creation
+ [x] Data sanitization
+ [x] Json response format
+ [x] Student data structure
+
+User Controller
+ [x] User controller instantiation
+ [x] User controller extends controller
+ [x] Index method exists
+ [x] Create method exists
+ [x] Store method exists
+ [x] Edit method exists
+ [x] Update method exists
+ [x] Delete method exists
+ [x] Controller has all c r u d methods
+ [x] C r u d methods are public
+
+Authentication Integration
+ [x] Complete login flow
+ [x] Complete logout flow
+ [x] Role verification after login
+ [x] Auth and user model integration
+ [x] Session persistence
+
+Student CRUDIntegration
+ [x] Complete student read flow
+ [x] Student career integration
+ [x] Student search functionality
+ [x] Student statistics
+ [x] Student data validation
+ [x] Data consistency between queries
+>>>>>>> Stashed changes
 
 Student Registration
  [x] Complete registration flow
@@ -90,10 +169,19 @@ Student Registration
  [x] Confirmation email structure
 
 System Integration
+<<<<<<< Updated upstream
  [ ] Complete user workflow
  [ ] Admin permissions
  [ ] Data integrity across models
  [ ] Models independence
  [ ] All main features available
  [ ] Multiple queries performance
+=======
+ [x] Complete user workflow
+ [x] Admin permissions
+ [x] Data integrity across models
+ [x] Models independence
+ [x] All main features available
+ [x] Multiple queries performance
+>>>>>>> Stashed changes
 

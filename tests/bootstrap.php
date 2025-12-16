@@ -4,12 +4,29 @@
  * Este archivo se ejecuta antes de todas las pruebas
  */
 
+<<<<<<< Updated upstream
+=======
+// Iniciar output buffering para evitar problemas con headers
+ob_start();
+
+// Definir constante de modo test
+define('TEST_MODE', true);
+
+>>>>>>> Stashed changes
 // Definir el directorio raíz del proyecto
 define('ROOT_PATH', dirname(__DIR__));
 
 // Incluir el autoloader de Composer
 require_once ROOT_PATH . '/vendor/autoload.php';
 
+<<<<<<< Updated upstream
+=======
+// Inicializar sesión simulada ANTES de incluir config
+if (!isset($_SESSION)) {
+    $_SESSION = [];
+}
+
+>>>>>>> Stashed changes
 // Incluir archivos de configuración necesarios
 require_once ROOT_PATH . '/config/config.php';
 
