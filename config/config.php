@@ -23,17 +23,17 @@ define('APP_NAME', 'Sistema de Registro Universitario');
 define('APP_VERSION', '2.0.0');
 
 // URLs (ajustar según el entorno)
-define('BASE_URL', 'http://localhost/Proyecto-Ingenieria-REGISTRO/public');
+define('BASE_URL', 'https://anakondita.com/Sistema_encuesta/public');
 define('ASSETS_URL', BASE_URL . '/assets');
 define('API_URL', BASE_URL . '/api');
 
 // Configuración de email
-define('SMTP_HOST', 'smtp.gmail.com');
-define('SMTP_PORT', 587);
-define('SMTP_ENCRYPTION', 'tls');
-define('SMTP_USERNAME', 'fernandocv25@gmail.com');
-define('SMTP_PASSWORD', 'bcol jyst wdwp kdkk');
-define('SMTP_FROM_EMAIL', 'fernandocv25@gmail.com');
+define('SMTP_HOST', 'mail.anakondita.com');
+define('SMTP_PORT', 465);
+define('SMTP_ENCRYPTION', 'ssl');
+define('SMTP_USERNAME', 'encuestaestudiantes@anakondita.com');
+define('SMTP_PASSWORD', 'Encuesta2024');
+define('SMTP_FROM_EMAIL', 'encuestaestudiantes@anakondita.com');
 define('SMTP_FROM_NAME', 'Opinión Estudiante');
 
 // Roles del sistema
@@ -42,6 +42,9 @@ define('ROLE_USER', 'usuario');
 
 // Cargar funciones helpers
 require_once BASE_PATH . '/helpers/functions.php';
+
+// Cargar clase Database manualmente
+require_once BASE_PATH . '/config/database.php';
 
 // Autoload de clases
 spl_autoload_register(function ($class) {

@@ -7,8 +7,8 @@ class Database {
     private $conn;
     
     private $host = "localhost";
-    private $user = "root";
-    private $pass = "";
+    private $user = "anakond1";
+    private $pass = "fxd8850OYi";
     private $dbname = "anakond1_anakonda";
     
     private function __construct() {
