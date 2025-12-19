@@ -310,6 +310,30 @@ class Student {
     }
     
     /**
+     * Obtiene estudiantes por carrera
+     * @param string $carrera
+     * @return array
+     */
+    public function getByCareer($carrera) {
+        $stmt = $this->conn->prepare(
+            "SELECT u.*, u.carrera as nombre_carrera 
+             FROM usuarios_universitarios u 
+             WHERE u.carrera = ?
+             ORDER BY u.id DESC"
+        );
+        
+        $stmt->bind_param("s", $carrera);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        if ($result) {
+            return $result->fetch_all(MYSQLI_ASSOC);
+        }
+        
+        return [];
+    }
+    
+    /**
      * Obtiene estadísticas generales de estudiantes
      * @return array
      */
