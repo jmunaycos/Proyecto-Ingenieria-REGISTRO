@@ -1,0 +1,200 @@
+[03-Dec-2025 03:02:01 America/Lima] PHP Warning:  Undefined array key "rol" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php on line 49
+[03-Dec-2025 03:04:39 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 16
+[03-Dec-2025 03:04:39 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 17
+[03-Dec-2025 03:04:39 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 18
+[03-Dec-2025 03:05:35 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 16
+[03-Dec-2025 03:05:35 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 17
+[03-Dec-2025 03:05:35 America/Lima] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\config\config.php on line 18
+[03-Dec-2025 03:07:15 America/Lima] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'rol' in 'field list' in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\fix_admin.php:11
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\fix_admin.php(11): mysqli->query('SELECT id, user...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\fix_admin.php on line 11
+[03-Dec-2025 03:09:13 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:09:18 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:09:30 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:10:48 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:10:53 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:11:03 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:11:06 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:11:35 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:11:55 America/Lima] Error en routing: Unknown column 'u.carrera_id' in 'on clause'
+[03-Dec-2025 03:13:55 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:13:55 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:14:13 America/Lima] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\dashboard\index.php on line 157
+[03-Dec-2025 03:31:26 America/Lima] POST recibido: Array
+(
+    [dni] => 42176706
+    [nombres] => fernando
+    [apellidos] => Castillo Vega
+    [correo] => castilloferga1@autonoma.edu.pe
+    [celular] => 997587070
+    [carrera] => 1
+    [ciclo] => 6
+    [comentarios] => mejores horarios
+)
+
+[03-Dec-2025 03:31:26 America/Lima] Error en routing: Unknown column 'celular' in 'field list'
+[03-Dec-2025 03:31:28 America/Lima] POST recibido: Array
+(
+    [dni] => 42176706
+    [nombres] => fernando
+    [apellidos] => Castillo Vega
+    [correo] => castilloferga1@autonoma.edu.pe
+    [celular] => 997587070
+    [carrera] => 1
+    [ciclo] => 6
+    [comentarios] => mejores horarios
+)
+
+[03-Dec-2025 03:31:28 America/Lima] Error en routing: Unknown column 'celular' in 'field list'
+[03-Dec-2025 03:32:53 America/Lima] POST recibido: Array
+(
+    [dni] => 42176706
+    [nombres] => fernando
+    [apellidos] => Castillo Vega
+    [correo] => castilloferga1@autonoma.edu.pe
+    [celular] => 997587070
+    [carrera] => 1
+    [ciclo] => 6
+    [comentarios] => mejores horarios
+)
+
+[03-Dec-2025 03:32:53 America/Lima] Error en routing: Unknown column 'celular' in 'field list'
+[03-Dec-2025 03:33:35 America/Lima] POST recibido: Array
+(
+    [dni] => 42176706
+    [nombres] => fernando
+    [apellidos] => Castillo Vega
+    [correo] => castilloferga1@autonoma.edu.pe
+    [celular] => 997587070
+    [carrera] => 1
+    [ciclo] => 6
+    [comentarios] => mejores horarios
+)
+
+[03-Dec-2025 03:33:35 America/Lima] Error en routing: Unknown column 'celular' in 'field list'
+[03-Dec-2025 03:36:23 America/Lima] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php:305
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php(280): StudentController->getEmailTemplate(Array)
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php(95): StudentController->sendWelcomeEmail(Array)
+#2 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\index.php(88): StudentController->store()
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 305
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "celular" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 248
+[03-Dec-2025 11:35:49 America/Lima] PHP Warning:  Undefined array key "fecha_registro" in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\StudentController.php on line 253
+[13-Dec-2025 19:57:47 America/Lima] PHP Fatal error:  Uncaught Error: Call to undefined function csrfToken() in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php:13
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\Controller.php(20): require_once()
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php(19): Controller->view('auth/login')
+#2 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\index.php(58): AuthController->showLogin()
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php on line 13
+[13-Dec-2025 19:59:29 America/Lima] PHP Fatal error:  Uncaught Error: Call to undefined function csrfToken() in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php:13
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\Controller.php(20): require_once()
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php(19): Controller->view('auth/login')
+#2 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\index.php(58): AuthController->showLogin()
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php on line 13
+[13-Dec-2025 20:00:01 America/Lima] PHP Fatal error:  Uncaught Error: Call to undefined function csrfToken() in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php:13
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\Controller.php(20): require_once()
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\controllers\AuthController.php(19): Controller->view('auth/login')
+#2 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\public\index.php(58): AuthController->showLogin()
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO\app\views\auth\login.php on line 13
+[13-Dec-2025 20:13:46 America/Lima] Error en routing: Unknown column 'c.codigo' in 'on clause'
+[13-Dec-2025 20:13:49 America/Lima] Error en routing: Unknown column 'c.codigo' in 'on clause'
+[13-Dec-2025 20:22:47 America/Lima] UPDATE - ID recibido: 9
+[13-Dec-2025 20:22:47 America/Lima] UPDATE - POST data: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"10","comentarios":"dfsdfsdsdgsggsdfgsgsdgsgsgsg"}
+[13-Dec-2025 20:22:47 America/Lima] UPDATE - Datos sanitizados: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"10","comentarios":"dfsdfsdsdgsggsdfgsgsdgsgsgsg"}
+[13-Dec-2025 20:22:47 America/Lima] UPDATE - Resultado: SUCCESS
+[13-Dec-2025 20:23:04 America/Lima] UPDATE - ID recibido: 9
+[13-Dec-2025 20:23:04 America/Lima] UPDATE - POST data: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"9","comentarios":"1234556778899"}
+[13-Dec-2025 20:23:04 America/Lima] UPDATE - Datos sanitizados: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"9","comentarios":"1234556778899"}
+[13-Dec-2025 20:23:04 America/Lima] UPDATE - Resultado: SUCCESS
+[13-Dec-2025 20:23:13 America/Lima] UPDATE - ID recibido: 9
+[13-Dec-2025 20:23:13 America/Lima] UPDATE - POST data: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"9","comentarios":"1234556778899"}
+[13-Dec-2025 20:23:13 America/Lima] UPDATE - Datos sanitizados: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"9","comentarios":"1234556778899"}
+[13-Dec-2025 20:23:13 America/Lima] UPDATE - Resultado: SUCCESS
+[13-Dec-2025 20:25:06 America/Lima] Error en routing: Ruta no encontrada
+[13-Dec-2025 20:25:20 America/Lima] UPDATE - ID recibido: 9
+[13-Dec-2025 20:25:20 America/Lima] UPDATE - POST data: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"10","comentarios":"3453535666666"}
+[13-Dec-2025 20:25:20 America/Lima] UPDATE - Datos sanitizados: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Mecatr\u00f3nica","ciclo":"10","comentarios":"3453535666666"}
+[13-Dec-2025 20:25:20 America/Lima] UPDATE - Resultado: SUCCESS
+[13-Dec-2025 20:26:13 America/Lima] Error en routing: Ruta no encontrada
+[13-Dec-2025 20:26:29 America/Lima] UPDATE - ID recibido: 9
+[13-Dec-2025 20:26:29 America/Lima] UPDATE - POST data: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Civil","ciclo":"9","comentarios":"muy bien se\u00f1ores"}
+[13-Dec-2025 20:26:29 America/Lima] UPDATE - Datos sanitizados: {"dni":"56636373","nombres":"Karla","apellidos":"Pruebas_5","correo":"Pruebas_5@gmail.com","carrera":"Ingenier\u00eda Civil","ciclo":"9","comentarios":"muy bien se\u00f1ores"}
+[13-Dec-2025 20:26:29 America/Lima] UPDATE - Resultado: SUCCESS
+[13-Dec-2025 20:26:32 America/Lima] Error en routing: Ruta no encontrada
+[13-Dec-2025 20:26:42 America/Lima] Error en routing: Ruta no encontrada
+[13-Dec-2025 20:26:47 America/Lima] Error en routing: Ruta no encontrada
+[13-Dec-2025 20:27:37 America/Lima] Error en routing: Ruta no encontrada
+[18-Dec-2025 23:04:13 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:04:14 America/Lima] PHP Fatal error:  Uncaught Error: Class "Tests\TestCase" not found in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\tests\Unit\AuthTest.php:12
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\Util\FileLoader.php(66): include_once()
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\Util\FileLoader.php(49): PHPUnit\Util\FileLoader::load('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\Framework\TestSuite.php(398): PHPUnit\Util\FileLoader::checkAndLoad('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\Framework\TestSuite.php(537): PHPUnit\Framework\TestSuite->addTestFile('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\TestSuiteMapper.php(67): PHPUnit\Framework\TestSuite->addTestFiles(Array)
+#5 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\Command.php(391): PHPUnit\TextUI\TestSuiteMapper->map(Object(PHPUnit\TextUI\XmlConfiguration\TestSuiteCollection), 'Unit Tests')
+#6 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\Command.php(114): PHPUnit\TextUI\Command->handleArguments(Array)
+#7 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#8 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#9 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next PHPUnit\TextUI\RuntimeException: Class "Tests\TestCase" not found in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\Command.php:101
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\Command.php on line 101
+[18-Dec-2025 23:04:31 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:08:02 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:09:39 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:12:44 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:13:02 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:15:40 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:18:21 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:18:56 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:19:18 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:19:34 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:19:57 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:31:57 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:32:32 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[19-Dec-2025 01:10:38 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[19-Dec-2025 01:12:05 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[19-Dec-2025 01:14:06 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[19-Dec-2025 01:14:34 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[19-Dec-2025 01:19:40 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
