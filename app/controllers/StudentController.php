@@ -96,6 +96,10 @@ class StudentController extends Controller {
         $studentId = $this->studentModel->create($data);
         
         if ($studentId) {
+            // Obtener nombre de la carrera para el correo
+            $carrera = $this->careerModel->getById($data['carrera']);
+            $data['nombre_carrera'] = $carrera ? $carrera['nombre'] : 'No especificada';
+            
             // Enviar correo de confirmación
             $this->sendWelcomeEmail($data);
             
@@ -306,8 +310,7 @@ class StudentController extends Controller {
      * Plantilla HTML del correo
      */
     private function getEmailTemplate($data) {
-        // $data['carrera'] es el nombre de la carrera (string), no un array
-        $nombreCarrera = $data['carrera'] ?? 'No especificada';
+        $nombreCarrera = $data['nombre_carrera'] ?? 'No especificada';
         
         return "
         <html>

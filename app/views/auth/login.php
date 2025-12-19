@@ -48,12 +48,6 @@ require_once __DIR__ . '/../layouts/header.php';
             Iniciar Sesión
         </button>
     </form>
-    
-    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e0e0e0; text-align: center; color: #666; font-size: 13px;">
-        <p><strong>Usuarios de prueba:</strong></p>
-        <p>Admin: <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">admin / admin123</code></p>
-        <p>Usuario: <code style="background: #f5f5f5; padding: 2px 6px; border-radius: 3px;">usuario / user123</code></p>
-    </div>
 </div>
 
 <?php if (isset($_SESSION['error'])): ?>

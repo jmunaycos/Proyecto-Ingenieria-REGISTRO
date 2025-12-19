@@ -146,7 +146,7 @@ document.getElementById('registroForm').addEventListener('submit', async functio
     });
     
     try {
-        const response = await fetch('index.php?route=students/store', {
+        const response = await fetch('<?php echo BASE_URL; ?>/index.php?route=students/store', {
             method: 'POST',
             body: formData
         });
