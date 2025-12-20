@@ -2,7 +2,11 @@ Header set Content-Security-Policy "script-src 'self' 'unsafe-inline' 'unsafe-ev
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
+<<<<<<< HEAD
     RewriteBase /Proyecto-Ingenieria-REGISTRO - TEST/public/
+=======
+    RewriteBase /Sistema_encuesta/public/
+>>>>>>> main
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]

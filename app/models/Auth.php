@@ -38,6 +38,7 @@ class Auth {
      */
     public static function logout() {
         self::initSession();
+<<<<<<< HEAD
         
         // Limpiar todas las variables de sesión
         $_SESSION = [];
@@ -55,6 +56,10 @@ class Auth {
         if (session_status() === PHP_SESSION_ACTIVE) {
             session_destroy();
         }
+=======
+        session_unset();
+        session_destroy();
+>>>>>>> main
     }
     
     /**

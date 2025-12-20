@@ -310,6 +310,7 @@ class Student {
     }
     
     /**
+<<<<<<< HEAD
      * Obtiene estudiantes por carrera
      * @param string $carrera
      * @return array
@@ -334,6 +335,8 @@ class Student {
     }
     
     /**
+=======
+>>>>>>> main
      * Obtiene estadísticas generales de estudiantes
      * @return array
      */

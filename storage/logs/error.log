@@ -159,6 +159,7 @@ Stack trace:
 [13-Dec-2025 20:26:42 America/Lima] Error en routing: Ruta no encontrada
 [13-Dec-2025 20:26:47 America/Lima] Error en routing: Ruta no encontrada
 [13-Dec-2025 20:27:37 America/Lima] Error en routing: Ruta no encontrada
+<<<<<<< HEAD
 [18-Dec-2025 23:04:13 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
 [18-Dec-2025 23:04:14 America/Lima] PHP Fatal error:  Uncaught Error: Class "Tests\TestCase" not found in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\tests\Unit\AuthTest.php:12
 Stack trace:
@@ -198,3 +199,5 @@ Stack trace:
 [19-Dec-2025 01:14:06 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
 [19-Dec-2025 01:14:34 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
 [19-Dec-2025 01:19:40 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+=======
+>>>>>>> main
