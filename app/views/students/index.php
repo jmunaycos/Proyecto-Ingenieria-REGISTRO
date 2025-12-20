@@ -10,7 +10,7 @@ require_once __DIR__ . '/../layouts/header.php';
             <button class="btn" onclick="exportarCSV()" style="background: #27ae60; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
                 <i class="fas fa-file-csv"></i> Exportar CSV
             </button>
-            <button class="btn" onclick="window.location.href='index.php?route=registro'" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+            <button class="btn" onclick="window.location.href='<?php echo BASE_URL; ?>/index.php?route=registro'" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
                 <i class="fas fa-plus"></i> Nuevo Registro
             </button>
         </div>
@@ -115,7 +115,7 @@ require_once __DIR__ . '/../layouts/header.php';
             
             <div>
                 <label style="display: block; margin-bottom: 5px; color: #333;">Correo</label>
-                <input type="email" id="editCorreo" required style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px;">
+                <input type="email" id="editCorreo" required pattern="[a-zA-Z0-9._%+-]+@autonoma\.edu\.pe$" title="Debe usar un correo institucional: ejemplo@autonoma.edu.pe" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px;">
             </div>
             
             <div>
@@ -231,9 +231,11 @@ function actualizarTabla(estudiantes) {
     });
 }
 
+const BASE_URL = '<?php echo BASE_URL; ?>';
+
 async function editarUsuario(id) {
     try {
-        const response = await fetch(`index.php?route=students/show/${id}`);
+        const response = await fetch(`${BASE_URL}/index.php?route=students/show/${id}`);
         const data = await response.json();
         
         if (data.success) {
@@ -271,7 +273,7 @@ document.getElementById('formEditar').addEventListener('submit', async function(
     formData.append('comentarios', document.getElementById('editComentarios').value);
     
     try {
-        const response = await fetch(`index.php?route=students/update/${id}`, {
+        const response = await fetch(`${BASE_URL}/index.php?route=students/update/${id}`, {
             method: 'POST',
             body: formData
         });
@@ -311,7 +313,7 @@ async function eliminarUsuario(id) {
     
     if (result.isConfirmed) {
         try {
-            const response = await fetch(`index.php?route=students/delete/${id}`, {
+            const response = await fetch(`${BASE_URL}/index.php?route=students/delete/${id}`, {
                 method: 'POST'
             });
             
@@ -331,7 +333,7 @@ async function eliminarUsuario(id) {
 }
 
 function exportarCSV() {
-    window.location.href = 'index.php?route=students/export-csv';
+    window.location.href = `${BASE_URL}/index.php?route=students/export-csv`;
 }
 
 // Inicializar

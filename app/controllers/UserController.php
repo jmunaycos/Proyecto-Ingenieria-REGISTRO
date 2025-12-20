@@ -136,6 +136,16 @@ class UserController extends Controller {
             $this->json(['success' => false, 'message' => 'Usuario no encontrado'], 404);
             return;
         }
+                // No permitir eliminar al usuario admin principal (ID 1)
+        if ($id == 1) {
+            $this->json(['success' => false, 'message' => 'No se puede eliminar al usuario administrador principal']);
+            return;
+        }
+                // No permitir editar al usuario admin principal (ID 1)
+        if ($id == 1) {
+            $this->json(['success' => false, 'message' => 'No se puede editar al usuario administrador principal']);
+            return;
+        }
         
         // No permitir editar el propio usuario
         if ($id == Auth::id()) {
@@ -207,6 +217,12 @@ class UserController extends Controller {
         $user = $this->userModel->getById($id);
         if (!$user) {
             $this->json(['success' => false, 'message' => 'Usuario no encontrado'], 404);
+            return;
+        }
+        
+        // No permitir eliminar al usuario admin principal (ID 1)
+        if ($id == 1) {
+            $this->json(['success' => false, 'message' => 'No se puede eliminar al usuario administrador principal']);
             return;
         }
         

@@ -171,7 +171,7 @@ require_once __DIR__ . '/../layouts/header.php';
     <div class="users-container">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
             <h2 style="margin: 0; color: #2c3e50;">Lista de Usuarios</h2>
-            <a href="index.php?route=usuarios&action=create" class="btn btn-primary">
+            <a href="<?php echo BASE_URL; ?>/index.php?route=usuarios&action=create" class="btn btn-primary">
                 ➕ Nuevo Usuario
             </a>
         </div>
@@ -198,15 +198,17 @@ require_once __DIR__ . '/../layouts/header.php';
                     </td>
                     <td><?php echo date('d/m/Y H:i', strtotime($usuario['created_at'])); ?></td>
                     <td>
-                        <?php if ($usuario['id'] != Auth::id()): ?>
+                        <?php if ($usuario['id'] == 1): ?>
+                            <span style="color: #95a5a6; font-style: italic;">👑 Usuario protegido</span>
+                        <?php elseif ($usuario['id'] == Auth::id()): ?>
+                            <span style="color: #95a5a6; font-style: italic;">Usuario actual</span>
+                        <?php else: ?>
                             <button onclick="editarUsuario(<?php echo $usuario['id']; ?>)" class="btn btn-edit">
                                 ✏️ Editar
                             </button>
                             <button onclick="eliminarUsuario(<?php echo $usuario['id']; ?>)" class="btn btn-delete">
                                 🗑️ Eliminar
                             </button>
-                        <?php else: ?>
-                            <span style="color: #95a5a6; font-style: italic;">Usuario actual</span>
                         <?php endif; ?>
                     </td>
                 </tr>
@@ -263,9 +265,11 @@ require_once __DIR__ . '/../layouts/header.php';
 </div>
 
 <script>
+const BASE_URL = '<?php echo BASE_URL; ?>';
+
 async function editarUsuario(id) {
     try {
-        const response = await fetch(`index.php?route=usuarios/show/${id}`);
+        const response = await fetch(`${BASE_URL}/index.php?route=usuarios/show/${id}`);
         const data = await response.json();
         
         if (data.success) {
@@ -297,7 +301,7 @@ document.getElementById('formEditar').addEventListener('submit', async function(
     formData.append('role', document.getElementById('editRole').value);
     
     try {
-        const response = await fetch(`index.php?route=usuarios/update/${id}`, {
+        const response = await fetch(`${BASE_URL}/index.php?route=usuarios/update/${id}`, {
             method: 'POST',
             body: formData
         });
@@ -331,7 +335,7 @@ async function eliminarUsuario(id) {
     
     if (result.isConfirmed) {
         try {
-            const response = await fetch(`index.php?route=usuarios/delete/${id}`, {
+            const response = await fetch(`${BASE_URL}/index.php?route=usuarios/delete/${id}`, {
                 method: 'POST'
             });
             

@@ -5,11 +5,11 @@ require_once __DIR__ . '/../layouts/header.php';
 
 <div class="container" style="max-width: 450px; margin: 80px auto; padding: 40px; background: white; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
     <div style="text-align: center; margin-bottom: 30px;">
-        <h1 style="color: #6a1b9a; margin-bottom: 10px;">Sistema de Registro</h1>
+        <h1 style="color: #6a1b9a; margin-bottom: 10px;">Sistema de Registro Universitario</h1>
         <p style="color: #666;">Universidad Autónoma del Perú</p>
     </div>
     
-    <form method="POST" action="index.php?route=login" style="display: flex; flex-direction: column; gap: 20px;">
+    <form method="POST" action="<?php echo BASE_URL; ?>/index.php?route=login" style="display: flex; flex-direction: column; gap: 20px;">
         <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(csrfToken()); ?>">
         <div>
             <label for="username" style="display: block; margin-bottom: 8px; color: #333; font-weight: 500;">Usuario</label>
