@@ -5,24 +5,24 @@
     
     <div class="nav-menu" style="display: flex; gap: 20px; align-items: center;">
         <?php if (Auth::isAdmin()): ?>
-            <a href="index.php?route=dashboard" style="color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: background 0.3s;" 
+            <a href="<?php echo BASE_URL; ?>/index.php?route=dashboard" style="color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: background 0.3s;" 
                onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
                onmouseout="this.style.background='transparent'">
                 Dashboard
             </a>
-            <a href="index.php?route=students" style="color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: background 0.3s;"
+            <a href="<?php echo BASE_URL; ?>/index.php?route=students" style="color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: background 0.3s;"
                onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
                onmouseout="this.style.background='transparent'">
                 Estudiantes
             </a>
-            <a href="index.php?route=usuarios" style="color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: background 0.3s;"
+            <a href="<?php echo BASE_URL; ?>/index.php?route=usuarios" style="color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: background 0.3s;"
                onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
                onmouseout="this.style.background='transparent'">
                 Usuarios
             </a>
         <?php endif; ?>
         
-        <a href="index.php?route=registro" style="color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: background 0.3s;"
+        <a href="<?php echo BASE_URL; ?>/index.php?route=registro" style="color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: background 0.3s;"
            onmouseover="this.style.background='rgba(255,255,255,0.2)'" 
            onmouseout="this.style.background='transparent'">
             Registro
@@ -37,7 +37,7 @@
             </span>
         </span>
         
-        <a href="index.php?route=logout" style="background: rgba(255,255,255,0.2); color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.3); transition: all 0.3s;"
+        <a href="<?php echo BASE_URL; ?>/index.php?route=logout" style="background: rgba(255,255,255,0.2); color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.3); transition: all 0.3s;"
            onmouseover="this.style.background='rgba(255,255,255,0.3)'" 
            onmouseout="this.style.background='rgba(255,255,255,0.2)'">
             Cerrar Sesión

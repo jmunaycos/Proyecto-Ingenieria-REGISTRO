@@ -86,6 +86,12 @@ class StudentController extends Controller {
             return;
         }
         
+        // Validar que sea correo institucional
+        if (!preg_match('/@autonoma\.edu\.pe$/i', $data['correo'])) {
+            $this->json(['success' => false, 'message' => 'Debe usar un correo institucional (@autonoma.edu.pe)']);
+            return;
+        }
+        
         // Validar DNI (8 dígitos)
         if (!preg_match('/^\d{8}$/', $data['dni'])) {
             $this->json(['success' => false, 'message' => 'El DNI debe tener 8 dígitos']);
@@ -174,6 +180,18 @@ class StudentController extends Controller {
         // Validar correo único (excluyendo el actual)
         if ($this->studentModel->existsEmail($data['correo'], $id)) {
             $this->json(['success' => false, 'message' => 'El correo ya está registrado por otro estudiante']);
+            return;
+        }
+        
+        // Validar formato de correo
+        if (!filter_var($data['correo'], FILTER_VALIDATE_EMAIL)) {
+            $this->json(['success' => false, 'message' => 'Formato de correo inválido']);
+            return;
+        }
+        
+        // Validar que sea correo institucional
+        if (!preg_match('/@autonoma\.edu\.pe$/i', $data['correo'])) {
+            $this->json(['success' => false, 'message' => 'Debe usar un correo institucional (@autonoma.edu.pe)']);
             return;
         }
         

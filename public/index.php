@@ -20,6 +20,16 @@ if (isset($_GET['route']) && !empty($_GET['route'])) {
     $route = !empty($routeParts[0]) ? $routeParts[0] : 'login';
     $action = isset($routeParts[1]) && !empty($routeParts[1]) ? $routeParts[1] : 'index';
     $param = isset($routeParts[2]) ? $routeParts[2] : null;
+    
+    // También soportar action como parámetro separado: index.php?route=usuarios&action=create
+    if (isset($_GET['action']) && !empty($_GET['action'])) {
+        $action = $_GET['action'];
+    }
+    
+    // Soportar id como parámetro: index.php?route=usuarios&action=update&id=1
+    if (isset($_GET['id']) && !empty($_GET['id'])) {
+        $param = $_GET['id'];
+    }
 }
 
 // Enrutamiento
