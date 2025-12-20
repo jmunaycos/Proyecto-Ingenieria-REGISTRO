@@ -1,2 +1,0 @@
-Download Link for PHPMailer
-https://github.com/PHPMailer/PHPMailer

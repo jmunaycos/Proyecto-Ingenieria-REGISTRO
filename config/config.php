@@ -23,7 +23,7 @@ define('APP_NAME', 'Sistema de Registro Universitario');
 define('APP_VERSION', '2.0.0');
 
 // URLs (ajustar según el entorno)
-define('BASE_URL', 'http://localhost/Proyecto-Ingenieria-REGISTRO/public');
+define('BASE_URL', 'http://localhost/Proyecto-Ingenieria-REGISTRO - TEST/public');
 define('ASSETS_URL', BASE_URL . '/assets');
 define('API_URL', BASE_URL . '/api');
 
@@ -32,13 +32,19 @@ define('SMTP_HOST', 'smtp.gmail.com');
 define('SMTP_PORT', 587);
 define('SMTP_ENCRYPTION', 'tls');
 define('SMTP_USERNAME', 'fernandocv25@gmail.com');
-define('SMTP_PASSWORD', 'bcol jyst wdwp kdkk');
+define('SMTP_PASSWORD', 'jqov uegv kizb rwzd');
 define('SMTP_FROM_EMAIL', 'fernandocv25@gmail.com');
-define('SMTP_FROM_NAME', 'Opinión Estudiante');
+define('SMTP_FROM_NAME', 'Sistema_encuesta');
 
 // Roles del sistema
 define('ROLE_ADMIN', 'admin');
 define('ROLE_USER', 'usuario');
+
+// Cargar funciones helpers
+require_once BASE_PATH . '/helpers/functions.php';
+
+// Cargar clase Database manualmente
+require_once BASE_PATH . '/config/database.php';
 
 // Autoload de clases
 spl_autoload_register(function ($class) {

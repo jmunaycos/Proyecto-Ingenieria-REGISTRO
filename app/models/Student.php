@@ -188,9 +188,9 @@ class Student {
      * @return array
      */
     public function countByCarrera() {
-        $query = "SELECT carrera as nombre_carrera, COUNT(*) as total 
-                  FROM usuarios_universitarios 
-                  GROUP BY carrera 
+        $query = "SELECT u.carrera as nombre_carrera, COUNT(*) as total 
+                  FROM usuarios_universitarios u
+                  GROUP BY u.carrera
                   ORDER BY total DESC";
         
         $result = $this->conn->query($query);
@@ -261,5 +261,104 @@ class Student {
         $result = $stmt->get_result();
         
         return $result->num_rows > 0;
+    }
+    
+    /**
+     * Obtiene un estudiante por DNI
+     * @param string $dni
+     * @return array|null
+     */
+    public function getByDNI($dni) {
+        $stmt = $this->conn->prepare(
+            "SELECT u.*, u.carrera as nombre_carrera 
+             FROM usuarios_universitarios u 
+             WHERE u.dni = ?"
+        );
+        
+        $stmt->bind_param("s", $dni);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        if ($result && $result->num_rows > 0) {
+            return $result->fetch_assoc();
+        }
+        
+        return null;
+    }
+    
+    /**
+     * Obtiene un estudiante por Email
+     * @param string $email
+     * @return array|null
+     */
+    public function getByEmail($email) {
+        $stmt = $this->conn->prepare(
+            "SELECT u.*, u.carrera as nombre_carrera 
+             FROM usuarios_universitarios u 
+             WHERE u.correo = ?"
+        );
+        
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        if ($result && $result->num_rows > 0) {
+            return $result->fetch_assoc();
+        }
+        
+        return null;
+    }
+    
+    /**
+     * Obtiene estudiantes por carrera
+     * @param string $carrera
+     * @return array
+     */
+    public function getByCareer($carrera) {
+        $stmt = $this->conn->prepare(
+            "SELECT u.*, u.carrera as nombre_carrera 
+             FROM usuarios_universitarios u 
+             WHERE u.carrera = ?
+             ORDER BY u.id DESC"
+        );
+        
+        $stmt->bind_param("s", $carrera);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        if ($result) {
+            return $result->fetch_all(MYSQLI_ASSOC);
+        }
+        
+        return [];
+    }
+    
+    /**
+     * Obtiene estadísticas generales de estudiantes
+     * @return array
+     */
+    public function getStats() {
+        $stats = [
+            'total' => $this->count(),
+            'por_carrera' => $this->countByCarrera(),
+            'por_ciclo' => $this->countByCiclo()
+        ];
+        
+        // Agregar estadísticas adicionales
+        $query = "SELECT 
+                    COUNT(DISTINCT dni) as total_dni_unicos,
+                    COUNT(DISTINCT correo) as total_correos_unicos,
+                    COUNT(DISTINCT carrera) as total_carreras
+                  FROM usuarios_universitarios";
+        
+        $result = $this->conn->query($query);
+        if ($result) {
+            $row = $result->fetch_assoc();
+            $stats['dni_unicos'] = (int)$row['total_dni_unicos'];
+            $stats['correos_unicos'] = (int)$row['total_correos_unicos'];
+            $stats['carreras_activas'] = (int)$row['total_carreras'];
+        }
+        
+        return $stats;
     }
 }

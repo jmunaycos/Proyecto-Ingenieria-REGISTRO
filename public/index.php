@@ -10,40 +10,16 @@ require_once __DIR__ . '/../config/config.php';
 Auth::initSession();
 
 // Determinar la ruta: puede venir de URL reescrita o de parámetro GET
-if (isset($_GET['route'])) {
-    // Modo sin .htaccess: index.php?route=dashboard o index.php?route=students/store
-    $routeParts = explode('/', $_GET['route']);
-    $route = $routeParts[0];
-    $action = $routeParts[1] ?? ($_GET['action'] ?? 'index');
-    $param = $routeParts[2] ?? ($_GET['id'] ?? null);
-} else {
-    // Modo con .htaccess: URL reescrita
-    $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    
-    // Remover el path base del proyecto si existe
-    $basePath = '/Proyecto-Ingenieria-REGISTRO/public';
-    if (strpos($requestUri, $basePath) === 0) {
-        $requestUri = substr($requestUri, strlen($basePath));
-    }
-    
-    // Remover index.php si existe
-    $requestUri = str_replace('/index.php', '', $requestUri);
-    
-    // Limpiar la URI
-    $uri = trim($requestUri, '/');
-    
-    // Si está vacía, es la raíz (login)
-    if (empty($uri)) {
-        $route = 'login';
-        $action = 'index';
-        $param = null;
-    } else {
-        // Separar la URI en partes
-        $parts = explode('/', $uri);
-        $route = $parts[0] ?? 'login';
-        $action = $parts[1] ?? 'index';
-        $param = $parts[2] ?? null;
-    }
+$route = 'login';
+$action = 'index';
+$param = null;
+
+if (isset($_GET['route']) && !empty($_GET['route'])) {
+    // Modo con .htaccess: index.php?route=dashboard/index o index.php?route=students/store
+    $routeParts = explode('/', trim($_GET['route'], '/'));
+    $route = !empty($routeParts[0]) ? $routeParts[0] : 'login';
+    $action = isset($routeParts[1]) && !empty($routeParts[1]) ? $routeParts[1] : 'index';
+    $param = isset($routeParts[2]) ? $routeParts[2] : null;
 }
 
 // Enrutamiento
@@ -126,6 +102,32 @@ try {
             }
             break;
             
+        case 'usuarios':
+            $controller = new UserController();
+            switch ($action) {
+                case 'index':
+                case '':
+                    $controller->index();
+                    break;
+                case 'create':
+                    $controller->create();
+                    break;
+                case 'store':
+                    $controller->store();
+                    break;
+                case 'show':
+                    $controller->show($param);
+                    break;
+                case 'update':
+                    $controller->update($param);
+                    break;
+                case 'delete':
+                    $controller->delete($param);
+                    break;
+                default:
+                    throw new Exception('Acción de usuario no encontrada');
+            }
+            break;
         default:
             throw new Exception('Ruta no encontrada');
     }

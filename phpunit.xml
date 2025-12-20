@@ -1,57 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
-         bootstrap="vendor/autoload.php"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.6/phpunit.xsd"
+         bootstrap="tests/bootstrap.php"
          colors="true"
-         verbose="true">
-
-    <testsuites>
-        <testsuite name="Models">
-            <directory>tests/models</directory>
-        </testsuite>
-        <testsuite name="Controllers">
-            <directory>tests/controllers</directory>
-        </testsuite>
-        <testsuite name="Integration">
-            <directory>tests/integration</directory>
-        </testsuite>
-    </testsuites>
-
-    <coverage processUncoveredFiles="true">
-        <include>
-            <directory suffix=".php">app/models</directory>
-            <directory suffix=".php">app/controllers</directory>
-        </include>
-        <exclude>
-            <directory>vendor</directory>
-            <directory>tests</directory>
-        </exclude>
-        <report>
-            <html outputDirectory="coverage/html"/>
-            <text outputFile="coverage/coverage.txt"/>
-        </report>
-    </coverage>
-
-    <php>
-        <ini name="display_errors" value="1"/>
-        <ini name="error_reporting" value="-1"/>
-    </php>
-</phpunit>
-<?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
-         bootstrap="vendor/autoload.php"
-         colors="true"
+         stopOnFailure="false"
+         failOnWarning="false"
+         failOnRisky="false"
          verbose="true">
     
     <testsuites>
-        <testsuite name="Models">
+        <testsuite name="Unit Tests">
             <directory>tests/models</directory>
         </testsuite>
-        <testsuite name="Controllers">
+        <testsuite name="Controller Tests">
             <directory>tests/controllers</directory>
         </testsuite>
-        <testsuite name="Integration">
+        <testsuite name="Integration Tests">
             <directory>tests/integration</directory>
         </testsuite>
     </testsuites>
@@ -66,13 +30,21 @@
             <directory>tests</directory>
         </exclude>
         <report>
-            <html outputDirectory="coverage/html"/>
-            <text outputFile="coverage/coverage.txt"/>
+            <html outputDirectory="tests/coverage"/>
+            <text outputFile="php://stdout" showUncoveredFiles="true"/>
         </report>
     </coverage>
 
     <php>
+        <env name="APP_ENV" value="testing"/>
         <ini name="display_errors" value="1"/>
         <ini name="error_reporting" value="-1"/>
+        <ini name="memory_limit" value="512M"/>
     </php>
+
+    <logging>
+        <testdoxHtml outputFile="tests/reports/testdox.html"/>
+        <testdoxText outputFile="tests/reports/testdox.txt"/>
+        <junit outputFile="tests/reports/junit.xml"/>
+    </logging>
 </phpunit>
