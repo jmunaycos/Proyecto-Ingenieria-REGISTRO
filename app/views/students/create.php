@@ -60,6 +60,8 @@ require_once __DIR__ . '/../layouts/header.php';
                 id="correo" 
                 name="correo" 
                 required
+                pattern="[a-zA-Z0-9._%+-]+@autonoma\.edu\.pe$"
+                title="Debe usar un correo institucional: ejemplo@autonoma.edu.pe"
                 placeholder="ejemplo@autonoma.edu.pe"
                 style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 5px; font-size: 14px;"
             >

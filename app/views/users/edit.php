@@ -145,7 +145,7 @@ require_once __DIR__ . '/../layouts/header.php';
             <strong>📅 Creado:</strong> <?php echo date('d/m/Y H:i', strtotime($data['user']['created_at'])); ?>
         </div>
 
-        <form method="POST" action="index.php?route=usuarios&action=update&id=<?php echo $data['user']['id']; ?>" id="formEditar">
+        <form method="POST" action="<?php echo BASE_URL; ?>/index.php?route=usuarios&action=update&id=<?php echo $data['user']['id']; ?>" id="formEditar">
             <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(csrfToken()); ?>">
             
             <div class="form-group">
@@ -216,7 +216,7 @@ require_once __DIR__ . '/../layouts/header.php';
                 <button type="submit" class="btn btn-primary" id="btnSubmit">
                     💾 Guardar Cambios
                 </button>
-                <a href="index.php?route=usuarios" class="btn btn-secondary">
+                <a href="<?php echo BASE_URL; ?>/index.php?route=usuarios" class="btn btn-secondary">
                     ← Volver
                 </a>
             </div>
