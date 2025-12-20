@@ -23,11 +23,24 @@ define('APP_NAME', 'Sistema de Registro Universitario');
 define('APP_VERSION', '2.0.0');
 
 // URLs (ajustar según el entorno)
+<<<<<<< HEAD
+define('BASE_URL', 'http://localhost/Proyecto-Ingenieria-REGISTRO - TEST/public');
+=======
 define('BASE_URL', 'https://anakondita.com/Sistema_encuesta/public');
+>>>>>>> main
 define('ASSETS_URL', BASE_URL . '/assets');
 define('API_URL', BASE_URL . '/api');
 
 // Configuración de email
+<<<<<<< HEAD
+define('SMTP_HOST', 'smtp.gmail.com');
+define('SMTP_PORT', 587);
+define('SMTP_ENCRYPTION', 'tls');
+define('SMTP_USERNAME', 'fernandocv25@gmail.com');
+define('SMTP_PASSWORD', 'jqov uegv kizb rwzd');
+define('SMTP_FROM_EMAIL', 'fernandocv25@gmail.com');
+define('SMTP_FROM_NAME', 'Sistema_encuesta');
+=======
 define('SMTP_HOST', 'mail.anakondita.com');
 define('SMTP_PORT', 465);
 define('SMTP_ENCRYPTION', 'ssl');
@@ -35,6 +48,7 @@ define('SMTP_USERNAME', 'encuestaestudiantes@anakondita.com');
 define('SMTP_PASSWORD', 'Encuesta2024');
 define('SMTP_FROM_EMAIL', 'encuestaestudiantes@anakondita.com');
 define('SMTP_FROM_NAME', 'Opinión Estudiante');
+>>>>>>> main
 
 // Roles del sistema
 define('ROLE_ADMIN', 'admin');

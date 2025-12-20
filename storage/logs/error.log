@@ -159,3 +159,45 @@ Stack trace:
 [13-Dec-2025 20:26:42 America/Lima] Error en routing: Ruta no encontrada
 [13-Dec-2025 20:26:47 America/Lima] Error en routing: Ruta no encontrada
 [13-Dec-2025 20:27:37 America/Lima] Error en routing: Ruta no encontrada
+<<<<<<< HEAD
+[18-Dec-2025 23:04:13 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:04:14 America/Lima] PHP Fatal error:  Uncaught Error: Class "Tests\TestCase" not found in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\tests\Unit\AuthTest.php:12
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\Util\FileLoader.php(66): include_once()
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\Util\FileLoader.php(49): PHPUnit\Util\FileLoader::load('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\Framework\TestSuite.php(398): PHPUnit\Util\FileLoader::checkAndLoad('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\Framework\TestSuite.php(537): PHPUnit\Framework\TestSuite->addTestFile('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\TestSuiteMapper.php(67): PHPUnit\Framework\TestSuite->addTestFiles(Array)
+#5 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\Command.php(391): PHPUnit\TextUI\TestSuiteMapper->map(Object(PHPUnit\TextUI\XmlConfiguration\TestSuiteCollection), 'Unit Tests')
+#6 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\Command.php(114): PHPUnit\TextUI\Command->handleArguments(Array)
+#7 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#8 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#9 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next PHPUnit\TextUI\RuntimeException: Class "Tests\TestCase" not found in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\Command.php:101
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#1 C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\vendor\phpunit\phpunit\src\TextUI\Command.php on line 101
+[18-Dec-2025 23:04:31 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:08:02 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:09:39 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:12:44 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:13:02 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:15:40 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:18:21 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:18:56 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:19:18 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:19:34 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:19:57 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:31:57 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[18-Dec-2025 23:32:32 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[19-Dec-2025 01:10:38 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[19-Dec-2025 01:12:05 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[19-Dec-2025 01:14:06 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[19-Dec-2025 01:14:34 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+[19-Dec-2025 01:19:40 America/Lima] PHP Warning:  Constant BASE_PATH already defined in C:\xampp\htdocs\Proyecto-Ingenieria-REGISTRO - TEST\config\config.php on line 21
+=======
+>>>>>>> main

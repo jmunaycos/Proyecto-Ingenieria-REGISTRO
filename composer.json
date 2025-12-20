@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
+    "name": "uap/sistema-opinion-estudiante",
+    "description": "Sistema de registro de opiniones de estudiantes",
+=======
     "name": "proyecto-ingenieria/registro",
     "description": "Sistema de Opinión del Estudiante",
+>>>>>>> main
     "type": "project",
     "require": {
         "php": ">=7.4"

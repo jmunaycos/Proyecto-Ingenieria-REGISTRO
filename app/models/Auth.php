@@ -38,8 +38,28 @@ class Auth {
      */
     public static function logout() {
         self::initSession();
+<<<<<<< HEAD
+        
+        // Limpiar todas las variables de sesión
+        $_SESSION = [];
+        
+        // Si se usan cookies de sesión, borrar también la cookie (solo si headers no se enviaron)
+        if (!headers_sent() && ini_get("session.use_cookies")) {
+            $params = session_get_cookie_params();
+            setcookie(session_name(), '', time() - 42000,
+                $params["path"], $params["domain"],
+                $params["secure"], $params["httponly"]
+            );
+        }
+        
+        // Solo destruir si la sesión está activa
+        if (session_status() === PHP_SESSION_ACTIVE) {
+            session_destroy();
+        }
+=======
         session_unset();
         session_destroy();
+>>>>>>> main
     }
     
     /**
